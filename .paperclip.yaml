@@ -1,0 +1,264 @@
+schema: "paperclip/v1"
+agents:
+  auditor:
+    role: "qa"
+    icon: "eye"
+    capabilities: "Scores agent outputs against rubrics. Reports quality issues to CEO. Reads all agent runs, logs, task history. Cannot edit agents, tasks, or take action."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+  ceo:
+    role: "ceo"
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        graceSec: 20
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        intervalSec: 300
+        maxConcurrentRuns: 1
+    permissions:
+      canCreateAgents: true
+  cto:
+    role: "cto"
+    icon: "cpu"
+    capabilities: "Engineering-manager mode. Locks technical plans, gates branch reviews (paranoid structural audit via gstack review skill), runs Friday engineering retro. Never writes production code. Writes decision notes for architecturally significant changes. Leads Founding Engineer, Implementation Engineer, UX Designer, Product Manager."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  follow-up-manager:
+    role: "general"
+    icon: "mail"
+    capabilities: "Watches Gmail for replies, matches to Notion CRM, logs every touch in Outreach Log, re-engages overdue leads via Content Writer drafts, books demos on Google Calendar with prep briefs. Learned cadence rules in follow-up-patterns.md (seed: 2-3d warm / 7d cold / stop after 3). Escalates hot replies to Head of Sales. Reports to Head of Sales."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+  founding-engineer:
+    role: "engineer"
+    icon: "code"
+    capabilities: "Builder mode. Ships CTO-locked plans. Owns Akira's core platform + reusable skills (flagship: future email-skill to replace n8n) + complex magnet builds on Cloudflare Pages. TDD + verification-before-completion + systematic-debugging discipline. Never ships without CTO review. Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+  implementation-engineer:
+    role: "engineer"
+    icon: "plug"
+    capabilities: "Per-client delivery mode. Turns a signed Proposal into a live Vapi+Twilio+Cal.com voice bot. Owns each client from Building → Feedback → Production → Maintenance. Per-client configs versioned in life/areas/clients/<slug>/ (voice-log, twilio, integrations, runbook, incidents). Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  ux-designer:
+    role: "general"
+    icon: "palette"
+    capabilities: "Design mode. Maintains the Akira design system (Nordic hospitality aesthetic: clean, confident, minimal). Reviews voice-agent UX (turn length, recovery, handoff). Produces magnet landing-page layouts + hook images. design-review + design-consultation gstack skills. Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+  product-manager:
+    role: "manager"
+    icon: "kanban"
+    capabilities: "Client-delivery PM. Owns the 'Agents (The Bots)' Notion DB (23979a0a-...) end-to-end. Daily scan: promotes Active CRM Companies into Bot rows; sequences CTO plan → Implementation Engineer config → UX review → status transitions. Only agent writing to Agents (The Bots). Writes client-facing summaries Jules can forward as-is. Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  head-of-sales:
+    role: "manager"
+    icon: "target"
+    capabilities: "Owns the sales pipeline. Daily Notion CRM sweep (Hot/Warm/At-Risk), stage progression, CEO escalations. Directs CRM Steward, Follow-Up Manager, Growth Analyst, Lead Researcher. Coordinates with Content Writer for copy. Reports to CEO. Year 1 target: 30 clients / 110K SEK MRR. North Star: 1M SEK/mo revenue by end of Y2."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  content-writer:
+    role: "general"
+    icon: "pen-tool"
+    capabilities: "Writes LinkedIn posts (Mon lead-magnet / Wed personal / Fri technical), Beehiiv newsletter issues, cold email sequences, LinkedIn reactivation DMs (via Cold-to-Cash two-prompt system, 30 words max), follow-up drafts, proposals. Brand-voice-enforcement on every draft. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+  head-of-marketing:
+    role: "cmo"
+    icon: "megaphone"
+    capabilities: "Owns top-of-funnel. Weekly content calendar (Mondays), Monday review of Growth Analyst's Friday brief, brand-safety approvals for LinkedIn posts/DMs, magnet approval gate. Directs LinkedIn Engagement Agent, Content Writer, Lead Magnet Creator. Reports to CEO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  linkedin-engagement:
+    role: "general"
+    icon: "linkedin"
+    capabilities: "Acts on Jules' LinkedIn 5×/day. Comments + reactions auto on allow-listed topics in Swedish/English/French (never Norwegian). Posts + DMs draft → Head of Marketing approves → publish. Owns inbound LinkedIn DMs: logs to CRM via Steward. Max 10 DMs/week. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 17280
+  lead-magnet-creator:
+    role: "general"
+    icon: "magnet"
+    capabilities: "Ideates + builds + measures lead magnets (Tally-first, escalate to Founding Engineer for complex tools). Ships micro-products — calculators, quizzes, benchmarks — that gate behind Beehiiv email signup. Seed magnet: Admin Staff Replacement ROI Calculator. Weekly ideation sweep on Fridays. Kills underperformers. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  customer-success-manager:
+    role: "manager"
+    icon: "heart-handshake"
+    capabilities: "Retention + library-driven upsell + referral orchestration. Daily scan of Production/Maintenance Bots. Churn signal flagging same-heartbeat. Library-ship sweeps: every new skill → eligible-client detection → upsell subtask to Head of Sales. 90-day referral asks drafted by Content Writer, sent via Jules. Weekly retention brief. Read-only on Agents (The Bots); PM owns writes there. Reports to CEO. North Star: NRR \u2265 120%."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  lead-researcher:
+    role: "researcher"
+    icon: "search"
+    capabilities: "Sources Nordic hospitality prospects via Apollo + secondary signals. Scores Tier 1/2/3 per ICP playbook. Writes to Google Sheet (PROSPECT_SHEET_ID). Never touches Notion. ~50 prospects/week target. Reports to Head of Sales."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  growth-analyst:
+    role: "general"
+    icon: "bar-chart-3"
+    capabilities: "Weekly Friday Board Brief covering top-of-funnel (LinkedIn engagement / prospects / first-touch) AND pipeline (stage counts, conversion, forecast vs. Y1 110K MRR and Y2 1M SEK/mo targets). Stuck-lead detection. Three recommendations per brief, each metric-backed with owner. Read-only on CRM/Sheet. Reports to Head of Sales."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 604800
+  crm-steward:
+    role: "general"
+    icon: "database"
+    capabilities: "CRM Steward + Notion write gatekeeper. All Notion writes (Outreach Log entries, Company records, stage changes, enrichment, page-body appends) flow through this agent as structured subtasks. Event-driven: wakes on every mention/subtask creation from another agent plus a 1h background cadence for schema snapshot, dedup, and anomaly detection. Never changes Pipeline Status autonomously — Head of Sales requests it with evidence, Steward validates + executes. Reports daily DIGEST to Head of Sales."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 3600
+company:
+  feedbackDataSharingConsentAt: "2026-04-15T14:05:40.107Z"
+  feedbackDataSharingConsentByUserId: "yL7SsZqEKk06CGfFkjVzZtfxX5rvRGW4"
+  feedbackDataSharingEnabled: true
+  feedbackDataSharingTermsVersion: "feedback-data-sharing-v1"
+projects:
+  onboarding:
+    color: "#6366f1"
+    status: "in_progress"
+  demand-creation:
+    color: "#10b981"
+    status: "in_progress"
+  sales-pipeline:
+    color: "#f97316"
+    status: "in_progress"
+  skill-library-delivery:
+    color: "#8b5cf6"
+    status: "in_progress"
+  customer-success:
+    color: "#ec4899"
+    status: "in_progress"
+  company-ops:
+    color: "#64748b"
+    status: "in_progress"
+sidebar:
+  agents:
+    - "ceo"
+    - "auditor"
+    - "customer-success-manager"
+    - "cto"
+    - "founding-engineer"
+    - "implementation-engineer"
+    - "ux-designer"
+    - "product-manager"
+    - "head-of-sales"
+    - "crm-steward"
+    - "follow-up-manager"
+    - "growth-analyst"
+    - "lead-researcher"
+    - "head-of-marketing"
+    - "linkedin-engagement"
+    - "content-writer"
+    - "lead-magnet-creator"
+  projects:
+    - "onboarding"
+    - "demand-creation"
+    - "sales-pipeline"
+    - "skill-library-delivery"
+    - "customer-success"
+    - "company-ops"
+teams:
+  - "engineering"
+  - "sales"
+  - "marketing"

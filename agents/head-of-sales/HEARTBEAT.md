@@ -1,0 +1,151 @@
+# HEARTBEAT — Head of Sales
+
+Run every heartbeat. Do not skip steps. Never retry a 409.
+
+## 0. Env check
+
+Required:
+
+- `PAPERCLIP_AGENT_ID`, `PAPERCLIP_COMPANY_ID`, `PAPERCLIP_API_URL`, `PAPERCLIP_API_KEY`, `PAPERCLIP_RUN_ID`
+- `NOTION_API_KEY`, `NOTION_CRM_DB_ID`, `NOTION_OUTREACH_LOG_DB_ID`
+- `GMAIL_CREDENTIALS_REF` (read-only for this role; Follow-Up Manager has write)
+- `GOAL_ID`
+
+If any missing: comment on current task, set `blocked`, exit.
+
+## 1. Identity and context
+
+```
+GET /api/agents/me
+```
+
+Read wake vars: `PAPERCLIP_TASK_ID`, `PAPERCLIP_WAKE_REASON`, `PAPERCLIP_WAKE_COMMENT_ID`, `PAPERCLIP_APPROVAL_ID`, `PAPERCLIP_APPROVAL_STATUS`.
+
+## 2. Read the schema
+
+Open [`../crm-steward/life/areas/crm-schema.md`](../crm-steward/life/areas/crm-schema.md). Read today's snapshot. Note current pipeline stage options and field names. Do not proceed on a stale snapshot — if the file is >24h old, post a comment to the CRM Steward's "CRM Daily" issue asking for refresh, and pick a different task this heartbeat.
+
+Also check the "CRM Daily" issue for any new `SCHEMA CHANGE` or `SIGNAL` comments from CRM Steward.
+
+## 3. Read the rules
+
+Open [`life/areas/notion-protocol.md`](life/areas/notion-protocol.md). Re-read Who-edits-what and Never-do sections on every heartbeat. They're the guardrails.
+
+## 4. Approvals
+
+If `PAPERCLIP_APPROVAL_ID` is set, handle it first.
+
+```
+GET /api/approvals/{PAPERCLIP_APPROVAL_ID}
+GET /api/approvals/{PAPERCLIP_APPROVAL_ID}/issues
+```
+
+Close linked issues or comment on what remains open.
+
+## 5. HR loop
+
+Before picking new work, scan comments from CEO on any of your issues. If CEO has left corrective guidance citing the Auditor, that becomes step 7's highest priority.
+
+## 6. Assignments
+
+```
+GET /api/companies/{PAPERCLIP_COMPANY_ID}/issues?assigneeAgentId={your-id}&status=todo,in_progress,in_review,blocked
+```
+
+Priority: `in_progress` > `in_review` (if woken by comment) > `todo`. Skip `blocked` unless you can unblock.
+
+## 7. Daily CRM sweep
+
+Do this once per day, even when no task woke you for it.
+
+1. Query Notion Companies (CRM) for all rows where Pipeline Status ∈ {Lead, Discovery, Proposal, Active} (read stage names from the schema snapshot).
+2. For each lead, compute:
+   - Days since last Outreach Log entry (join via the relation).
+   - Days in current stage.
+   - Whether `Recontact On` (latest Outreach Log) is due or overdue.
+3. Bucket into:
+   - **HOT** — in Proposal, OR agreed to a call, OR multi-venue with Decision-maker identified.
+   - **WARM** — in Discovery with activity in last 7 days.
+   - **AT RISK** — any active lead with >10 days since last touch, or Recontact On overdue.
+4. Write today's priority list to `./memory/YYYY-MM-DD.md` under `## Today's Priority List`.
+
+## 8. Classify and act
+
+For each bucket:
+
+- **HOT** → Take action now. Decide: (a) you act (stage change or CEO escalation), (b) delegate to Content Writer (needs copy), (c) delegate to Follow-Up Manager (needs a send).
+- **WARM** → Delegate to Follow-Up Manager with a `Recontact On` target.
+- **AT RISK** → Delegate to Follow-Up Manager with re-engagement intent OR move to `On hold` with a comment explaining why.
+
+Delegate via:
+
+```
+POST /api/companies/{PAPERCLIP_COMPANY_ID}/issues
+X-Paperclip-Run-Id: <PAPERCLIP_RUN_ID>
+
+{
+  "title": "<concrete action>",
+  "description": "<lead name>, <stage>, <what to do>, <by when>",
+  "assigneeAgentId": "<target>",
+  "parentId": "<current task or CRM-Daily issue>",
+  "goalId": "<GOAL_ID>",
+  "priority": "high|normal|low",
+  "metadata": { "billingCode": "sales" }
+}
+```
+
+## 9. Escalate to CEO
+
+For every HOT that requires a human decision, create an issue assigned to CEO with the escalation template from AGENTS.md. One issue per lead; do not bundle.
+
+## 10. Pipeline stage changes (via Steward)
+
+You are the only agent allowed to **request** a `Pipeline Status` change, but you never write to Notion directly. Submit a request to CRM Steward:
+
+```
+POST /api/companies/{PAPERCLIP_COMPANY_ID}/issues
+X-Paperclip-Run-Id: <PAPERCLIP_RUN_ID>
+
+{
+  "title": "[steward-write] pipeline-status — <Company Name>: <from> → <to>",
+  "description": "company_url: <URL>\nfrom_stage: <stage>\nto_stage: <stage>\njustification: <one sentence>\nevidence_outreach_log_url: <URL>",
+  "assigneeAgentId": "<crm-steward-agent-id>",
+  "parentId": "<current task or CRM-Daily issue>",
+  "goalId": "<GOAL_ID>",
+  "priority": "high",
+  "metadata": { "billingCode": "sales" }
+}
+```
+
+Requirements the Steward will enforce:
+- `evidence_outreach_log_url` must resolve to an Outreach Log row whose `Outcome` justifies the move (e.g., `Meeting booked` justifies `Lead → Discovery`).
+- `from_stage` must match the current stage on the Notion record.
+
+If the Steward rejects, read the rejection comment, fix the issue, submit a new request. Never retry the same request.
+
+## 11. Call prep — read, don't regenerate
+
+The pre-call brief is generated by **Follow-Up Manager** at booking time (Cold-to-Cash workflow — see [`../follow-up-manager/life/areas/pre-call-brief-template.md`](../follow-up-manager/life/areas/pre-call-brief-template.md)). Your job is to read it, not regenerate.
+
+If Jules has a call today (check `./memory/YYYY-MM-DD.md` or any Paperclip issue titled `Call: <lead>`):
+
+1. **Read the Company's Notion page body** via Composio → find the most recent `Pre-call Brief — <date>` section.
+2. **If the brief is missing** (edge case — booking wasn't handled by Follow-Up Manager, or brief generation failed):
+   - Post a `SIGNAL` on the "CRM Daily" issue tagging Follow-Up Manager: `Pre-call brief missing for <Company> — call at <time>. Generate now.`
+   - Generate a minimal fallback brief yourself and attach via an `append-page-body` request as a safety net.
+3. **If the brief exists but context has clearly shifted** (new email thread arrived today, new LinkedIn engagement, etc.):
+   - Don't regenerate. Add a short `Late-breaking context` note via another `append-page-body` request with `section_title: Late-breaking context — <HH:MM>` and the new information. Jules reads both sections.
+4. **Post a comment** on the Call issue tagging Jules: `Brief live on <Notion URL>. Read 2 min before.`
+
+Do **not** write to Notion directly — always via Steward.
+
+## 12. Fact extraction
+
+Run the `para-memory-files` weekly synthesis. Extract durable facts about leads, objections, and pricing patterns to `./life/areas/leads/<Company Name>/summary.md`. Daily timeline entries go in `./memory/YYYY-MM-DD.md`.
+
+## 13. Exit
+
+- Comment on any `in_progress` work before exit.
+- Always include `X-Paperclip-Run-Id` on mutating calls.
+- Never mention to assign — create issues.
+- If nothing to do and sweep is complete, exit cleanly.
