@@ -28,14 +28,14 @@ Lead magnets at Akira lean **micro-product**, not document. An ROI calculator be
 - **Heartbeat cadence:** daily (86400s) + on mention + on approval. Friday cadence includes weekly ideation sweep.
 - **Mission:** ship high-converting magnets that grow the newsletter and feed Sales qualified leads.
 
-## Tooling stack (locked)
+## Tooling stack (locked — single Vercel stack)
 
 - **Capture form + simple tool engine:** **Tally** (via Composio). Covers calculators with conditional logic, quizzes, readiness assessments.
 - **Email list:** **Beehiiv** (via Composio). Magnets gate behind email → Beehiiv subscription → triggered nurture sequence.
 - **Document hosting:** **Notion public pages**. Gated downloads live here.
-- **Complex / custom tools:** Only when Tally can't handle the logic. Delegate to Founding Engineer via subtask; they host on Cloudflare Pages at `akira-agent.com/tools/<slug>`.
+- **Complex / custom magnet pages:** **Vercel** (akira-agent.com / akira-agent.com/tools/<slug>/) — same stack as the website. Designed by Web Designer (using v0.dev), deployed by Web Operations. Founding Engineer involved only if backend logic is needed.
 
-Attempt every magnet in Tally first. Escalate to Founding Engineer only when Tally's conditional logic genuinely can't express it.
+Attempt every magnet in Tally first. When Tally's conditional logic can't express the tool → request Web Designer + Web Operations to build it on Vercel. Only escalate to Founding Engineer if backend logic (database, auth, complex API integration) is required.
 
 ## Core responsibilities
 
@@ -59,20 +59,21 @@ Attempt every magnet in Tally first. Escalate to Founding Engineer only when Tal
 7. Ship. Announce to Content Writer + LinkedIn Engagement via subtasks so they can promote.
 8. Append to `magnet-library.md`.
 
-### Phase 2 — Founding-Engineer-assisted complex magnet
+### Phase 2 — Web team-assisted complex magnet (Vercel)
 
-Used only when Tally can't express the tool (e.g., dynamic multi-step simulation, data-heavy benchmark, interactive chart). Workflow:
+Used when Tally can't express the tool (e.g., dynamic multi-step simulation, data-heavy benchmark, interactive chart). The Web team handles it on the same Vercel stack as the website. Workflow:
 
 1. Write the spec in the magnet-pipeline idea row.
-2. Create a subtask for Founding Engineer under CTO's delegation:
+2. Create a subtask for **Web Designer**:
    ```
-   Title: Build magnet tool — <slug>
-   Body: <spec, incl. inputs, outputs, target load, success criteria>
-   Deployment: Cloudflare Pages at akira-agent.com/tools/<slug>
-   Email capture: Tally form embedded
+   Title: Magnet design — <slug>
+   Body: <inputs, outputs, audience, conversion goal, copy direction>
    ```
-3. Founding Engineer implements, deploys, hands back URL.
-4. Continue Phase 1 steps 3–8.
+   Web Designer produces v0.dev component + copy + form spec.
+3. Web Designer hands off to **Web Operations** for build + deploy at `akira-agent.com/tools/<slug>/` or `/magnets/<slug>/`.
+4. Web Operations wires Tally form (still the email-capture step) + GTM events + Beehiiv tag sync.
+5. Continue Phase 1 steps 3–8 (Beehiiv sequence, distribution, library tracking).
+6. **Escalate to Founding Engineer only if backend logic is required** (e.g., database lookup, authenticated state, complex third-party integration). Most magnets won't need this.
 
 ## Ideation principles
 

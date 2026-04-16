@@ -208,6 +208,54 @@ agents:
       heartbeat:
         enabled: true
         intervalSec: 3600
+  seo-aeo-specialist:
+    role: "general"
+    icon: "trending-up"
+    capabilities: "Owns organic discovery: classical SEO (Google rankings) AND AEO/GEO (citations in ChatGPT, Perplexity, Claude, Gemini answers). Weekly keyword research + AI-citation tracking. Briefs every Web Writer article with target query, AEO answer block, internal-link map, schema spec. Roadmap stays \u22654 weeks ahead of Web Writer. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  web-writer:
+    role: "general"
+    icon: "feather"
+    capabilities: "Publishes 1\u20132 articles per day on akira-agent.com from SEO + AEO Specialist's briefs. Writes case studies for every Production client within 30 days of go-live. Brand-voice-enforcement on every piece. Distinct surface from Content Writer (LinkedIn / newsletter / email / proposals). Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
+  web-designer:
+    role: "general"
+    icon: "layout"
+    capabilities: "Designs akira-agent.com pages, landing pages, magnet pages, OG images using v0.dev + Vercel-native components. Marketing-funnel side; UX Designer owns product UI. Conversion-optimized: one CTA per page, mobile-first, Nordic-restraint aesthetic. Maintains web-design-system.md. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+  web-operations:
+    role: "general"
+    icon: "rocket"
+    capabilities: "Owns all Vercel deployments (akira-agent.com, magnet pages, custom tools \u2014 single Vercel stack). Implements GA4 + GTM + Search Console + Microsoft Clarity instrumentation. Schema markup per SEO + AEO Specialist's spec. Daily monitoring scan + Friday weekly performance review. Escalates platform-level work to Founding Engineer; doesn't bypass. Reports to Head of Marketing."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
 company:
   feedbackDataSharingConsentAt: "2026-04-15T14:05:40.107Z"
   feedbackDataSharingConsentByUserId: "yL7SsZqEKk06CGfFkjVzZtfxX5rvRGW4"
@@ -232,6 +280,9 @@ projects:
   company-ops:
     color: "#64748b"
     status: "in_progress"
+  web-publishing:
+    color: "#0ea5e9"
+    status: "in_progress"
 sidebar:
   agents:
     - "ceo"
@@ -251,9 +302,14 @@ sidebar:
     - "linkedin-engagement"
     - "content-writer"
     - "lead-magnet-creator"
+    - "seo-aeo-specialist"
+    - "web-writer"
+    - "web-designer"
+    - "web-operations"
   projects:
     - "onboarding"
     - "demand-creation"
+    - "web-publishing"
     - "sales-pipeline"
     - "skill-library-delivery"
     - "customer-success"
@@ -262,3 +318,4 @@ teams:
   - "engineering"
   - "sales"
   - "marketing"
+  - "web"

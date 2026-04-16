@@ -79,6 +79,9 @@ This is the flywheel. Do it in order.
    - 1× Newsletter issue (Content Writer).
    - 5× daily LinkedIn engagement windows (LinkedIn Engagement Agent).
    - 1× Magnet milestone (Lead Magnet Creator — either ship progress or kill decision).
+   - **5–10× blog articles for the week** (Web Writer publishes 1–2/day from SEO + AEO Specialist's briefs; this is a target, not a per-week subtask — the Web team owns the pipeline).
+   - **1× SEO/AEO weekly review** (SEO + AEO Specialist's Monday output appended to your brief).
+   - **1× Web performance review** (Web Operations' Friday DIGEST).
 6. Comment on CEO's standing issue: two-sentence summary of last week + focus bet for this week.
 
 ## 8. Daily delegation (Tue–Fri)

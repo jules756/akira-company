@@ -109,14 +109,20 @@ When Implementation Engineer or Customer Success surfaces an issue with an exist
 
 Don't let library skills rot. The whole moat depends on the library staying reliable across every client it's deployed to.
 
-## 10. Magnet builds (when assigned by Lead Magnet Creator)
+## 10. Magnet backend builds (rare — Web Operations escalates only)
 
-Tally-insufficient tools:
+Day-to-day magnet pages are now built by Web Designer + Web Operations on the Vercel stack. You only get involved when a magnet needs backend logic:
+- Database lookup (Supabase) for personalized data.
+- Authenticated state (gated content per user).
+- Complex third-party API integration that's beyond a Tally → Beehiiv flow.
+
+When Web Operations escalates such a request:
 1. Read the spec in the subtask. If unclear, bounce back.
-2. Scaffold on Cloudflare Pages. TypeScript + Hono or plain HTML/JS depending on complexity.
-3. Keep it under ~300 lines of code. If you're past that, reconsider scope with Lead Magnet Creator.
-4. Deploy to `akira-agent.com/tools/<slug>/`.
-5. Return the URL + Tally-capture integration instructions to Lead Magnet Creator.
+2. Build the backend (API route, Supabase migration, etc.) — keep scope tight.
+3. Hand the Web Operations agent the API endpoint + integration docs.
+4. Web Operations completes the deploy + integration on the Vercel side.
+
+You no longer scaffold magnet pages or own deployment.
 
 ## 11. Exit
 

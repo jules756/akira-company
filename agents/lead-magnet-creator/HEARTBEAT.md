@@ -80,19 +80,21 @@ Triggered by an `in_progress` subtask titled `Build <magnet slug>`.
 9. Post a launch kit to subtasks for Content Writer (LinkedIn launch post) and LinkedIn Engagement (promote + drop references in relevant comment threads).
 10. Append to `magnet-library.md` with live date, URL, initial metrics empty.
 
-## 8. Build workflow — complex (Founding Engineer assist)
+## 8. Build workflow — complex (Web team on Vercel)
 
-Triggered when a magnet needs custom code. Workflow:
+Triggered when a magnet needs more than Tally can express. Same Vercel stack as the website. **Founding Engineer involved only if backend logic is required (database, auth, complex API).**
 
-1. Write the spec (inputs, outputs, logic, target load).
-2. Create subtask under CTO's delegation chain (reassign via CTO):
+1. Write the spec (inputs, outputs, logic, target conversion rate, audience).
+2. Create subtask for **Web Designer**:
    ```
-   Title: Build magnet tool — <slug> (custom)
-   Body: <spec>
-   Deployment: Cloudflare Pages, akira-agent.com/tools/<slug>
+   Title: Magnet design — <slug>
+   Body: <spec, copy direction, brand-voice notes, target URL preference>
+   Assignee: web-designer
    ```
-3. Founding Engineer builds + deploys + returns URL.
-4. Resume Tally workflow at step 3 (embed the custom tool, add Tally-only capture step).
+3. Web Designer ships v0 component + copy → hands to Web Operations.
+4. Web Operations deploys at `akira-agent.com/tools/<slug>/` or `/magnets/<slug>/`, wires Tally embed + GTM events + Beehiiv tag sync.
+5. **Only if backend logic needed** (rare): Web Operations escalates to Founding Engineer with a clear API spec.
+6. Resume Tally workflow at step 3 once Web Operations confirms live URL.
 
 ## 9. Weekly measurement (Fridays, after ideation)
 
