@@ -7,42 +7,48 @@ color: "#0ea5e9"
 
 # Web Publishing
 
-The Web team's compounding work: SEO + AEO discovery, daily blog cadence, case studies, web design, Vercel deployment, and analytics instrumentation. Most of Akira's organic discovery happens here.
+The daily execution engine for akira-agent.com. 2 articles per day, 7 days/week. Case studies for every Production client. Page designs and templates. Vercel deploys + GA4 / GTM / Microsoft Clarity / Search Console daily monitoring instrumentation.
+
+The strategic ammunition (keyword roadmap, AEO targets, trend insights) lives in the sister project [`seo-aeo-growth`](../seo-aeo-growth/PROJECT.md). This project is where briefs become live, instrumented pages.
 
 ## Scope
 
-- **akira-agent.com pages** — homepage, /services, /case-studies, /pricing, /blog (and individual blog posts), magnet landing pages, custom-tool pages.
-- **SEO + AEO research + briefs** — keyword roadmap, AI citation tracking, content cluster planning.
-- **Daily blog cadence** — 1–2 articles per day, every business day, from SEO + AEO Specialist's briefs.
-- **Case studies** — every Production client gets a case study within 30 days of go-live.
-- **Vercel deployments** — every web surface, from articles to magnet pages.
-- **Analytics + tagging** — GA4 + GTM + Search Console + Microsoft Clarity instrumented across the site.
-- **Technical SEO health** — sitemap, schema, redirects, Core Web Vitals.
+- **Daily blog publishing** — Web Writer ships 2 articles/day, 7 days/week from SEO + AEO Specialist's briefs.
+- **Case studies** — Web Writer covers every Production client within 30 days of go-live.
+- **Page templates + designs** — Web Designer using v0.dev + Vercel-native components for landing pages, /services, /case-studies, hero sections, OG images.
+- **Vercel deploys** — Web Operations is the single deployer for akira-agent.com + magnet pages + custom tools (single-stack rule).
+- **Analytics instrumentation** — GA4 + GTM + Microsoft Clarity tags wired on every page; conversion events mapped to Tally / Beehiiv / Cal.com.
+- **Daily Search Console analysis** — Web Operations reviews GSC every morning, surfaces opportunities to SEO + AEO Specialist (their work then lives in `seo-aeo-growth`).
+- **Web ops monitoring** — Vercel deploy log + GA4 anomalies + magnet form pipeline health (Mon/Wed/Fri).
+- **Friday performance review** — weekly DIGEST to Head of Marketing.
 
 ## Primary agents
 
-- **SEO + AEO Specialist** — owns the keyword + AEO roadmap; briefs every article.
-- **Web Writer** — drafts every article + case study from briefs.
-- **Web Designer** — designs every page using v0.dev; web-design-system maintainer.
-- **Web Operations** — Vercel deploys; analytics instrumentation; technical SEO implementation.
+- **Web Writer** — drafts 14 articles/week + case studies.
+- **Web Designer** — page templates + landing pages + OG images via v0.dev.
+- **Web Operations** — Vercel deployer + analytics + Search Console monitor + technical SEO implementation.
 
-Coordinates with: Head of Marketing (strategy + approvals), Lead Magnet Creator (magnet pages on Vercel), Customer Success Manager (case study triggers), Content Writer (cross-promotion of new articles via LinkedIn / newsletter), Founding Engineer (rare — backend logic for complex magnets).
+Coordinates with SEO + AEO Specialist + SEO Trend Researcher (briefs, schema specs, trend-driven changes from `seo-aeo-growth`), Lead Magnet Creator (magnet pages on the same Vercel project), Founding Engineer (rare backend escalations).
 
 ## References
 
-- [`seo-playbook.md`](../../agents/seo-aeo-specialist/life/areas/seo-playbook.md)
-- [`keyword-roadmap.md`](../../agents/seo-aeo-specialist/life/areas/keyword-roadmap.md)
-- [`aeo-citation-log.md`](../../agents/seo-aeo-specialist/life/areas/aeo-citation-log.md)
+- [`editorial-calendar.md`](../../agents/web-writer/life/areas/editorial-calendar.md)
 - [`web-design-system.md`](../../agents/web-designer/life/areas/web-design-system.md)
 - [`deployment-playbook.md`](../../agents/web-operations/life/areas/deployment-playbook.md)
 - [`analytics-tracking-spec.md`](../../agents/web-operations/life/areas/analytics-tracking-spec.md)
-- [`editorial-calendar.md`](../../agents/web-writer/life/areas/editorial-calendar.md)
+
+## Routines feeding this project
+
+- `daily-blog-publish` (Web Writer) — 2x/day, 7 days/week (9am + 3pm Stockholm)
+- `daily-search-console-analysis` (Web Operations) — every morning 8am
+- `web-ops-monitoring-mwf` (Web Operations) — Mon/Wed/Fri 11am
+- `friday-web-performance-review` (Web Operations) — Fridays 3pm
 
 ## Success criteria (ongoing)
 
-- ≥5 articles published per week (target 1–2/day).
-- ≥1 case study per new Production client within 30 days of go-live.
-- AEO citation count growing month-over-month across tracked queries.
-- Every page meets Core Web Vitals green.
-- Every page has correct GA4 + GTM event coverage.
-- akira-agent.com becomes the dominant top-of-funnel by Y2 exit (most prospect first-touches sourced from organic discovery).
+- 14 articles/week shipped without backlog.
+- ≥1 case study per new Production client within 30 days.
+- Every shipped page meets Core Web Vitals green at first deploy.
+- Every shipped page has correct GA4 + GTM event coverage.
+- Vercel deploys: zero broken production deploys per week.
+- Daily Search Console anomalies surfaced same heartbeat to SEO + AEO Specialist.
