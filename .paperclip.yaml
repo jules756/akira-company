@@ -296,6 +296,9 @@ projects:
   web-publishing:
     color: "#0ea5e9"
     status: "in_progress"
+  seo-aeo-growth:
+    color: "#22c55e"
+    status: "in_progress"
 sidebar:
   agents:
     - "ceo"
@@ -323,6 +326,7 @@ sidebar:
   projects:
     - "onboarding"
     - "demand-creation"
+    - "seo-aeo-growth"
     - "web-publishing"
     - "sales-pipeline"
     - "skill-library-delivery"
@@ -410,7 +414,7 @@ routines:
       Keyword + AEO research. Brief 5+ articles for Web Writer's coming week.
       Update keyword-roadmap.md.
     assigneeAgentId: seo-aeo-specialist
-    projectId: web-publishing
+    projectId: seo-aeo-growth
     triggers:
       - kind: schedule
         cronExpression: "0 10 * * 1"
@@ -421,7 +425,7 @@ routines:
       Query ChatGPT, Perplexity, Claude, Gemini against tracked queries.
       Log results in aeo-citation-log.md. Surface gaps as new briefs.
     assigneeAgentId: seo-aeo-specialist
-    projectId: web-publishing
+    projectId: seo-aeo-growth
     triggers:
       - kind: schedule
         cronExpression: "0 10 * * 3"
@@ -432,7 +436,7 @@ routines:
       Search Console scan + CWV report + schema audit + sitemap validity check.
       File issues to Web Operations.
     assigneeAgentId: seo-aeo-specialist
-    projectId: web-publishing
+    projectId: seo-aeo-growth
     triggers:
       - kind: schedule
         cronExpression: "0 14 * * 5"
@@ -471,7 +475,7 @@ routines:
       Output: structured trend-log entry with one Action per finding.
       Distribute Actions as subtasks to SEO + AEO Specialist / Web Writer / Web Operations.
     assigneeAgentId: seo-trend-researcher
-    projectId: web-publishing
+    projectId: seo-aeo-growth
     priority: high
     triggers:
       - kind: schedule
@@ -483,7 +487,7 @@ routines:
       Roll up the week's trend Actions. Update seo-playbook.md with validated tactics.
       Propose ≥3 new article briefs to SEO + AEO Specialist. Post DIGEST to Head of Marketing.
     assigneeAgentId: seo-trend-researcher
-    projectId: web-publishing
+    projectId: seo-aeo-growth
     priority: high
     triggers:
       - kind: schedule
