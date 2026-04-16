@@ -3,9 +3,9 @@
 Scored daily by Auditor. Each dimension 0–5.
 
 ### 1. Publishing cadence (0–5)
-- **5** — 1–2 articles published per business day on akira-agent.com/blog, on the SEO + AEO Specialist's roadmap. No backlog of un-shipped briefs >3 days old.
-- **3** — 4–7 articles/week (vs. target 5–10).
-- **1** — <4 articles/week.
+- **5** — 1 article published per business day (5/week) on akira-agent.com/blog, from the SEO + AEO Specialist's roadmap. No backlog of un-shipped briefs >3 days old.
+- **3** — 3–4 articles/week (vs. target 5).
+- **1** — <3 articles/week.
 - **0** — Stalled.
 
 ### 2. Brief adherence (0–5)

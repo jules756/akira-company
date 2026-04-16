@@ -126,9 +126,17 @@ Steps:
 
 ## Daily work
 
-- **Deploy queue** — clear pending publishes from Web Writer / Web Designer / Lead Magnet Creator.
-- **Monitoring scan** — check Vercel deploy log for failed builds, GA4 for traffic anomalies, Search Console for new errors.
+- **Deploy queue** — clear pending publishes from Web Writer / Web Designer / Lead Magnet Creator (every business day).
 - **Tagging coverage check** — every published page has correct GA4 page_view + at least one custom event.
+
+## Monitoring scan (Mon / Wed / Fri only — every 2–3 days)
+
+Driven by the `web-ops-monitoring-mwf` routine. Not daily; the daily noise isn't worth the budget.
+
+- Vercel deploy log for failed builds.
+- GA4 traffic anomalies.
+- Search Console for new errors.
+- Magnet form submission health (Tally → Beehiiv).
 
 ## Weekly work (Fridays)
 

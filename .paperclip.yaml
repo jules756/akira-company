@@ -234,6 +234,19 @@ agents:
       heartbeat:
         enabled: true
         intervalSec: 86400
+  seo-trend-researcher:
+    role: "researcher"
+    icon: "telescope"
+    capabilities: "SEO + AEO landscape scout. Daily scan across 4 source classes (industry blogs, Google Search Central, AEO/GEO platforms, competitor moves) → structured trend-log with an Action per finding. Distributes Actions to SEO + AEO Specialist (roadmap), Web Writer (angles), Web Operations (tech). Major-update SLA: response plan within 48h. Weekly synthesis on Mondays. Co-maintains seo-playbook.md with SEO + AEO Specialist."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
   web-designer:
     role: "general"
     icon: "layout"
@@ -303,6 +316,7 @@ sidebar:
     - "content-writer"
     - "lead-magnet-creator"
     - "seo-aeo-specialist"
+    - "seo-trend-researcher"
     - "web-writer"
     - "web-designer"
     - "web-operations"
@@ -319,3 +333,240 @@ teams:
   - "sales"
   - "marketing"
   - "web"
+routines:
+  # ───── Sales (project: sales-pipeline) ─────
+  daily-crm-sweep:
+    title: "Daily CRM sweep — {{date}}"
+    description: |
+      Run the daily CRM sweep per HEARTBEAT.md.
+      Output: Hot/Warm/At-Risk priority list + escalations to CEO if any.
+    assigneeAgentId: head-of-sales
+    projectId: sales-pipeline
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9 * * 1-5"
+        timezone: Europe/Stockholm
+  daily-gmail-sweep:
+    title: "Gmail sweep — {{date}}"
+    description: |
+      Scan Gmail for replies. Match to CRM. Submit Outreach Log requests via Steward. Escalate hot replies.
+    assigneeAgentId: follow-up-manager
+    projectId: sales-pipeline
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9 * * 1-5"
+        timezone: Europe/Stockholm
+  daily-crm-steward-hygiene:
+    title: "CRM hygiene + schema snapshot — {{date}}"
+    description: |
+      Schema snapshot + dedup scan + anomaly flags + DIGEST to Head of Sales.
+    assigneeAgentId: crm-steward
+    projectId: sales-pipeline
+    triggers:
+      - kind: schedule
+        cronExpression: "0 6 * * *"
+        timezone: Europe/Stockholm
+  daily-lead-research:
+    title: "Lead research — {{date}}"
+    description: |
+      Engagement-sourcing first (LinkedIn engagers from Tier 1 capture log).
+      Apollo sourcing second to fill weekly volume target.
+    assigneeAgentId: lead-researcher
+    projectId: sales-pipeline
+    triggers:
+      - kind: schedule
+        cronExpression: "0 10 * * 1-5"
+        timezone: Europe/Stockholm
+  weekly-friday-board-brief:
+    title: "Friday Board Brief — week of {{week}}"
+    description: |
+      Weekly cross-funnel brief (top-of-funnel + pipeline + LinkedIn + magnets + newsletter).
+    assigneeAgentId: growth-analyst
+    projectId: sales-pipeline
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 16 * * 5"
+        timezone: Europe/Stockholm
+  # ───── Marketing (project: demand-creation) ─────
+  monday-marketing-review:
+    title: "Marketing weekly review + content calendar — week of {{week}}"
+    description: |
+      Read Growth Analyst's Friday brief. Update content-playbook.md.
+      Publish content calendar (3 LinkedIn posts Mon/Wed/Fri + newsletter + magnet milestone + 5 web articles).
+      Conversations-→-content pass: pull recurring objections from last 7 days of Outreach Log.
+    assigneeAgentId: head-of-marketing
+    projectId: demand-creation
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 8 * * 1"
+        timezone: Europe/Stockholm
+  # ───── Web team (project: web-publishing) ─────
+  monday-seo-research:
+    title: "SEO + AEO weekly research — week of {{week}}"
+    description: |
+      Keyword + AEO research. Brief 5+ articles for Web Writer's coming week.
+      Update keyword-roadmap.md.
+    assigneeAgentId: seo-aeo-specialist
+    projectId: web-publishing
+    triggers:
+      - kind: schedule
+        cronExpression: "0 10 * * 1"
+        timezone: Europe/Stockholm
+  wednesday-aeo-citation-probe:
+    title: "AEO citation probe — {{date}}"
+    description: |
+      Query ChatGPT, Perplexity, Claude, Gemini against tracked queries.
+      Log results in aeo-citation-log.md. Surface gaps as new briefs.
+    assigneeAgentId: seo-aeo-specialist
+    projectId: web-publishing
+    triggers:
+      - kind: schedule
+        cronExpression: "0 10 * * 3"
+        timezone: Europe/Stockholm
+  friday-seo-tech-health:
+    title: "SEO technical health check — {{date}}"
+    description: |
+      Search Console scan + CWV report + schema audit + sitemap validity check.
+      File issues to Web Operations.
+    assigneeAgentId: seo-aeo-specialist
+    projectId: web-publishing
+    triggers:
+      - kind: schedule
+        cronExpression: "0 14 * * 5"
+        timezone: Europe/Stockholm
+  daily-blog-publish:
+    title: "Blog article — {{date}} {{time}}"
+    description: |
+      Pull the next article brief from SEO + AEO Specialist's roadmap.
+      Draft per the article shape (hook + AEO answer block + body + CTA).
+      Submit for SEO + AEO review.
+      Fires twice daily, 7 days/week → target 14 articles/week.
+    assigneeAgentId: web-writer
+    projectId: web-publishing
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9,15 * * *"
+        timezone: Europe/Stockholm
+  daily-search-console-analysis:
+    title: "Search Console analysis — {{date}}"
+    description: |
+      Read yesterday's GSC data via Composio. Surface: top queries, new ranking pages,
+      pages losing rankings, coverage/indexing errors, click-through anomalies.
+      Flag opportunities to SEO + AEO Specialist via subtask. Flag tech issues to self for fix.
+    assigneeAgentId: web-operations
+    projectId: web-publishing
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 8 * * *"
+        timezone: Europe/Stockholm
+  daily-seo-trend-scan:
+    title: "SEO trend scan — {{date}}"
+    description: |
+      Cover all 4 source classes: industry blogs, Google Search Central, AEO/GEO platforms, competitor moves.
+      Output: structured trend-log entry with one Action per finding.
+      Distribute Actions as subtasks to SEO + AEO Specialist / Web Writer / Web Operations.
+    assigneeAgentId: seo-trend-researcher
+    projectId: web-publishing
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 7 * * 1-5"
+        timezone: Europe/Stockholm
+  monday-seo-trend-synthesis:
+    title: "SEO trend weekly synthesis — week of {{week}}"
+    description: |
+      Roll up the week's trend Actions. Update seo-playbook.md with validated tactics.
+      Propose ≥3 new article briefs to SEO + AEO Specialist. Post DIGEST to Head of Marketing.
+    assigneeAgentId: seo-trend-researcher
+    projectId: web-publishing
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "30 10 * * 1"
+        timezone: Europe/Stockholm
+  web-ops-monitoring-mwf:
+    title: "Web ops monitoring scan — {{date}}"
+    description: |
+      Vercel deploy log + GA4 anomalies + Search Console errors + magnet form pipeline health.
+      Investigate any anomalies via systematic-debugging.
+    assigneeAgentId: web-operations
+    projectId: web-publishing
+    triggers:
+      - kind: schedule
+        cronExpression: "0 11 * * 1,3,5"
+        timezone: Europe/Stockholm
+  friday-web-performance-review:
+    title: "Web weekly performance review — week of {{week}}"
+    description: |
+      Search Console deep scan + CWV per page + GA4 funnel review + tag-coverage audit.
+      Post DIGEST to Head of Marketing.
+    assigneeAgentId: web-operations
+    projectId: web-publishing
+    triggers:
+      - kind: schedule
+        cronExpression: "0 15 * * 5"
+        timezone: Europe/Stockholm
+  # ───── Customer Success ─────
+  weekly-cs-retention-brief:
+    title: "Retention brief — week of {{week}}"
+    description: |
+      Production client health summary. Net new vs churned. Upsell pipeline. Churn flags. Referrals sent.
+    assigneeAgentId: customer-success-manager
+    projectId: customer-success
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 16 * * 5"
+        timezone: Europe/Stockholm
+  monthly-cs-upsell-sweep:
+    title: "Monthly library upsell sweep — {{month}}"
+    description: |
+      Cross-reference every Production client's skill stack vs. full library.
+      Create upsell subtasks for Head of Sales per eligible client.
+    assigneeAgentId: customer-success-manager
+    projectId: customer-success
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9 1 * *"
+        timezone: Europe/Stockholm
+  # ───── Engineering ─────
+  monday-pm-portfolio-review:
+    title: "PM portfolio review — week of {{week}}"
+    description: |
+      Bot status counts. Aging beyond SLA. MRR live + Building. Items needing Jules decision.
+    assigneeAgentId: product-manager
+    projectId: skill-library-delivery
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 9 * * 1"
+        timezone: Europe/Stockholm
+  friday-engineering-retro:
+    title: "Engineering retro — week of {{week}}"
+    description: |
+      Weekly retro per gstack `retro` skill. What worked, what didn't, per-person, next week's bet.
+    assigneeAgentId: cto
+    projectId: skill-library-delivery
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 14 * * 5"
+        timezone: Europe/Stockholm
+  # ───── Company ops ─────
+  friday-ceo-governance-review:
+    title: "Governance review — week of {{week}}"
+    description: |
+      Read 7 days of Paperclip activity log. Scan for unexpected actions, budget alerts,
+      approval-gate rejections, efficiency outliers. Post findings.
+    assigneeAgentId: ceo
+    projectId: company-ops
+    priority: high
+    triggers:
+      - kind: schedule
+        cronExpression: "0 17 * * 5"
+        timezone: Europe/Stockholm

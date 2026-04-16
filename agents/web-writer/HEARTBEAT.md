@@ -39,7 +39,7 @@ Filter by:
 - `[Article brief]` titled subtasks from SEO + AEO Specialist.
 - `[Case study draft]` titled subtasks from Customer Success Manager.
 
-Order: in_progress first, then todo (oldest first). Target: clear 1–2 per heartbeat.
+Order: in_progress first, then todo (oldest first). Target: clear 1 article per business day (driven by the `daily-blog-publish` routine).
 
 ## 5. Brief validation (every pulled brief)
 

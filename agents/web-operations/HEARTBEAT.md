@@ -88,9 +88,11 @@ Triggered by SEO + AEO Specialist (schema) or anyone needing event tagging.
 4. Document in `analytics-tracking-spec.md` (for events) or in the affected page's metadata.
 5. Confirm to requester.
 
-## 6. Daily monitoring scan
+## 6. Monitoring scan (Mon / Wed / Fri — every 2–3 days)
 
-Every heartbeat:
+Driven by the `web-ops-monitoring-mwf` routine. On non-routine days, skip this step (focus on deploy queue).
+
+When the routine fires:
 - **Vercel deploy log** — any failed builds in last 24h?
 - **GA4 real-time** — traffic anomaly (drop or spike >50% vs. baseline)?
 - **Search Console errors** — new coverage issues?
