@@ -1,4 +1,5 @@
 ---
+slug: "icp-matching"
 name: icp-matching
 description: Score and qualify prospects against your Ideal Customer Profile using firmographic, technographic, and behavioral criteria
 license: MIT

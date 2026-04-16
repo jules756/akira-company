@@ -1,4 +1,5 @@
 ---
+slug: "apolloio"
 name: apolloio
 description: |
   Apollo.io integration. Manage Persons, Organizations, Deals, Leads, Pipelines, Users and more. Use when the user wants to interact with Apollo.io data.

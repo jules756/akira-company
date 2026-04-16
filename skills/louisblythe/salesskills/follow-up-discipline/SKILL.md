@@ -1,4 +1,5 @@
 ---
+slug: "follow-up-discipline"
 name: follow-up-discipline
 description: When the user wants to improve their persistent but respectful outreach that keeps deals moving. Also use when the user mentions "following up," "staying on top of deals," "persistent outreach," "keeping deals alive," "not letting deals fall through," or "consistent follow-up."
 ---

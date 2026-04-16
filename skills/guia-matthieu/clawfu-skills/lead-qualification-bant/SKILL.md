@@ -1,4 +1,5 @@
 ---
+slug: "lead-qualification-bant"
 name: lead-qualification-bant
 description: Qualify leads using the BANT framework (Budget, Authority, Need, Timeline) with discovery questions and scoring criteria
 license: MIT

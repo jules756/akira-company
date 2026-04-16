@@ -1,4 +1,5 @@
 ---
+slug: "founder-sales"
 name: founder-sales
 description: Help founders close their first customers and build repeatable sales processes. Use when someone is doing founder-led sales, trying to get their first customers, writing cold outreach, running early sales calls, or asking when to hire their first salesperson.
 ---

@@ -1,4 +1,5 @@
 ---
+slug: "lead-qualification-meddic"
 name: lead-qualification-meddic
 description: Qualify enterprise opportunities using MEDDIC/MEDDPICC framework for complex B2B sales cycles
 license: MIT

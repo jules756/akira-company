@@ -1,4 +1,5 @@
 ---
+slug: "qa"
 name: qa
 preamble-tier: 4
 version: 2.0.0

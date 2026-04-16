@@ -1,4 +1,5 @@
 ---
+slug: "sales-qualification"
 name: sales-qualification
 description: Help users qualify sales leads effectively. Use when someone is wasting time on bad leads, struggling with low conversion rates, needs to build a qualification framework, or wants to improve their discovery process.
 ---

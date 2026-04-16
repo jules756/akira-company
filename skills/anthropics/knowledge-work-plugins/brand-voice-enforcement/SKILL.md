@@ -1,4 +1,5 @@
 ---
+slug: "brand-voice-enforcement"
 name: brand-voice-enforcement
 description: >
   This skill applies brand guidelines to content creation. It should be used when

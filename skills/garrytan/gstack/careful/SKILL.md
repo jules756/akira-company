@@ -1,4 +1,5 @@
 ---
+slug: "careful"
 name: careful
 version: 0.1.0
 description: |

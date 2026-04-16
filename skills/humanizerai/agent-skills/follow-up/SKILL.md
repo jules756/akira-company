@@ -1,4 +1,5 @@
 ---
+slug: "follow-up"
 name: follow-up
 description: Write follow-up emails that re-engage without being annoying. Uses proven psychology for follow-up sequences. 42% of replies come from follow-ups.
 user-invocable: true

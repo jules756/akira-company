@@ -1,4 +1,5 @@
 ---
+slug: "icp-builder"
 name: icp-builder
 description: Define ideal customer profiles and buyer personas with structured frameworks. Use when the user asks about ideal customer profile, ICP, buyer persona, target audience definition, customer segmentation, customer research, user interviews, or persona creation. Trigger phrases include "ideal customer profile", "ICP", "buyer persona", "who is my customer", "target audience", "customer profile", "persona", "customer segmentation", "user research", "customer interview", "who should I target".
 ---

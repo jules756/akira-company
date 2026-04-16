@@ -1,4 +1,5 @@
 ---
+slug: "rubric-writer"
 name: rubric-writer
 description: |
   Use when `paper-review` has claims plus evidence gaps and needs the final referee-style report.

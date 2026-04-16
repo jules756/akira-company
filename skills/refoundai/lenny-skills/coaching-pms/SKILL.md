@@ -1,4 +1,5 @@
 ---
+slug: "coaching-pms"
 name: coaching-pms
 description: Help users develop and coach product managers. Use when someone is managing PMs, creating development plans, running performance reviews, or trying to level up their PM team's capabilities.
 ---

@@ -1,4 +1,5 @@
 ---
+slug: "compose-outreach"
 name: compose-outreach
 description: "Generate personalized outreach messages using Common Room signals. Triggers on 'draft outreach to [person]', 'write an email to [name]', 'compose a message for [contact]', or any outreach drafting request."
 ---

@@ -1,4 +1,5 @@
 ---
+slug: "evaluation-rubrics"
 name: evaluation-rubrics
 description: Use when need explicit quality criteria and scoring scales to evaluate work consistently, compare alternatives objectively, set acceptance thresholds, reduce subjective bias, or when user mentions rubric, scoring criteria, quality standards, evaluation framework, inter-rater reliability, or grade/assess work.
 ---

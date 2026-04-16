@@ -1,4 +1,5 @@
 ---
+slug: "thought-leadership"
 name: thought-leadership
 description: Use when crafting executive POVs, visionary articles, or keynote narratives that elevate brand authority.
 ---

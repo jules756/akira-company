@@ -1,4 +1,5 @@
 ---
+slug: "plan-design-review"
 name: plan-design-review
 preamble-tier: 3
 version: 2.0.0
