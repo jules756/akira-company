@@ -1,7 +1,16 @@
 ---
-slug: "brand-copywriter"
 name: brand-copywriter
+slug: brand-copywriter
+key: ognjengt/founder-skills/brand-copywriter
 description: Writes marketing copy using proven copywriting frameworks. Use when user needs copy for ads (Facebook, Instagram, TikTok, YouTube), landing pages, sales pages, email sequences, LinkedIn posts, product descriptions, or any marketing content.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/brand-copywriter
+    repo: ognjengt/founder-skills
+    trackingRef: main
+    url: https://github.com/ognjengt/founder-skills/tree/main/skills/brand-copywriter
 ---
 
 # Brand Copywriter

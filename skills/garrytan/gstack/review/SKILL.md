@@ -1,23 +1,36 @@
 ---
-slug: "review"
 name: review
+slug: review
+key: garrytan/gstack/review
+description: 'Pre-landing PR review. Analyzes diff against the base branch for SQL safety, LLM trust
+
+  boundary violations, conditional side effects, and other structural issues. Use when
+
+  asked to "review this PR", "code review", "pre-landing review", or "check my diff".
+
+  Proactively suggest when the user is about to merge or land code changes. (gstack)
+
+  '
 preamble-tier: 4
 version: 1.0.0
-description: |
-  Pre-landing PR review. Analyzes diff against the base branch for SQL safety, LLM trust
-  boundary violations, conditional side effects, and other structural issues. Use when
-  asked to "review this PR", "code review", "pre-landing review", or "check my diff".
-  Proactively suggest when the user is about to merge or land code changes. (gstack)
 allowed-tools:
-  - Bash
-  - Read
-  - Edit
-  - Write
-  - Grep
-  - Glob
-  - Agent
-  - AskUserQuestion
-  - WebSearch
+- Bash
+- Read
+- Edit
+- Write
+- Grep
+- Glob
+- Agent
+- AskUserQuestion
+- WebSearch
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/review
+    repo: garrytan/gstack
+    trackingRef: main
+    url: https://github.com/garrytan/gstack/tree/main/skills/review
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

@@ -1,7 +1,16 @@
 ---
-slug: "compose-outreach"
 name: compose-outreach
-description: "Generate personalized outreach messages using Common Room signals. Triggers on 'draft outreach to [person]', 'write an email to [name]', 'compose a message for [contact]', or any outreach drafting request."
+slug: compose-outreach
+key: anthropics/knowledge-work-plugins/compose-outreach
+description: Generate personalized outreach messages using Common Room signals. Triggers on 'draft outreach to [person]', 'write an email to [name]', 'compose a message for [contact]', or any outreach drafting request.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/compose-outreach
+    repo: anthropics/knowledge-work-plugins
+    trackingRef: main
+    url: https://github.com/anthropics/knowledge-work-plugins/tree/main/skills/compose-outreach
 ---
 
 # Compose Outreach

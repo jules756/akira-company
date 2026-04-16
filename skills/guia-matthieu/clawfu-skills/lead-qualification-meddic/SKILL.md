@@ -1,12 +1,20 @@
 ---
-slug: "lead-qualification-meddic"
 name: lead-qualification-meddic
+slug: lead-qualification-meddic
+key: guia-matthieu/clawfu-skills/lead-qualification-meddic
 description: Qualify enterprise opportunities using MEDDIC/MEDDPICC framework for complex B2B sales cycles
 license: MIT
 metadata:
   author: ClawFu
   version: 1.0.0
-  mcp-server: "@clawfu/mcp-skills"
+  mcp-server: '@clawfu/mcp-skills'
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/lead-qualification-meddic
+    repo: guia-matthieu/clawfu-skills
+    trackingRef: main
+    url: https://github.com/guia-matthieu/clawfu-skills/tree/main/skills/lead-qualification-meddic
 ---
 
 # Lead Qualification: MEDDIC

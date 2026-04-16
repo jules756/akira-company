@@ -1,20 +1,34 @@
 ---
-slug: "retro"
 name: retro
+slug: retro
+key: garrytan/gstack/retro
+description: 'Weekly engineering retrospective. Analyzes commit history, work patterns,
+
+  and code quality metrics with persistent history and trend tracking.
+
+  Team-aware: breaks down per-person contributions with praise and growth areas.
+
+  Use when asked to "weekly retro", "what did we ship", or "engineering retrospective".
+
+  Proactively suggest at the end of a work week or sprint. (gstack)
+
+  '
 preamble-tier: 2
 version: 2.0.0
-description: |
-  Weekly engineering retrospective. Analyzes commit history, work patterns,
-  and code quality metrics with persistent history and trend tracking.
-  Team-aware: breaks down per-person contributions with praise and growth areas.
-  Use when asked to "weekly retro", "what did we ship", or "engineering retrospective".
-  Proactively suggest at the end of a work week or sprint. (gstack)
 allowed-tools:
-  - Bash
-  - Read
-  - Write
-  - Glob
-  - AskUserQuestion
+- Bash
+- Read
+- Write
+- Glob
+- AskUserQuestion
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/retro
+    repo: garrytan/gstack
+    trackingRef: main
+    url: https://github.com/garrytan/gstack/tree/main/skills/retro
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

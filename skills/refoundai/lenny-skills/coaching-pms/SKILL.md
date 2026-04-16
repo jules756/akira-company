@@ -1,7 +1,16 @@
 ---
-slug: "coaching-pms"
 name: coaching-pms
+slug: coaching-pms
+key: refoundai/lenny-skills/coaching-pms
 description: Help users develop and coach product managers. Use when someone is managing PMs, creating development plans, running performance reviews, or trying to level up their PM team's capabilities.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/coaching-pms
+    repo: refoundai/lenny-skills
+    trackingRef: main
+    url: https://github.com/refoundai/lenny-skills/tree/main/skills/coaching-pms
 ---
 
 # Coaching Product Managers

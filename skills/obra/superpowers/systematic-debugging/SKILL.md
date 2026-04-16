@@ -1,7 +1,16 @@
 ---
-slug: "systematic-debugging"
 name: systematic-debugging
+slug: systematic-debugging
+key: obra/superpowers/systematic-debugging
 description: Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/systematic-debugging
+    repo: obra/superpowers
+    trackingRef: main
+    url: https://github.com/obra/superpowers/tree/main/skills/systematic-debugging
 ---
 
 # Systematic Debugging

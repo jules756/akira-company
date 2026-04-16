@@ -1,23 +1,37 @@
 ---
-slug: "careful"
 name: careful
-version: 0.1.0
-description: |
-  Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE,
+slug: careful
+key: garrytan/gstack/careful
+description: 'Safety guardrails for destructive commands. Warns before rm -rf, DROP TABLE,
+
   force-push, git reset --hard, kubectl delete, and similar destructive operations.
+
   User can override each warning. Use when touching prod, debugging live systems,
+
   or working in a shared environment. Use when asked to "be careful", "safety mode",
+
   "prod mode", or "careful mode". (gstack)
+
+  '
+version: 0.1.0
 allowed-tools:
-  - Bash
-  - Read
+- Bash
+- Read
 hooks:
   PreToolUse:
-    - matcher: "Bash"
-      hooks:
-        - type: command
-          command: "bash ${CLAUDE_SKILL_DIR}/bin/check-careful.sh"
-          statusMessage: "Checking for destructive commands..."
+  - matcher: Bash
+    hooks:
+    - type: command
+      command: bash ${CLAUDE_SKILL_DIR}/bin/check-careful.sh
+      statusMessage: Checking for destructive commands...
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/careful
+    repo: garrytan/gstack
+    trackingRef: main
+    url: https://github.com/garrytan/gstack/tree/main/skills/careful
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

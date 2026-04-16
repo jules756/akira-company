@@ -1,25 +1,41 @@
 ---
-slug: "design-consultation"
 name: design-consultation
+slug: design-consultation
+key: garrytan/gstack/design-consultation
+description: 'Design consultation: understands your product, researches the landscape, proposes a
+
+  complete design system (aesthetic, typography, color, layout, spacing, motion), and
+
+  generates font+color preview pages. Creates DESIGN.md as your project''s design source
+
+  of truth. For existing sites, use /plan-design-review to infer the system instead.
+
+  Use when asked to "design system", "brand guidelines", or "create DESIGN.md".
+
+  Proactively suggest when starting a new project''s UI with no existing
+
+  design system or DESIGN.md. (gstack)
+
+  '
 preamble-tier: 3
 version: 1.0.0
-description: |
-  Design consultation: understands your product, researches the landscape, proposes a
-  complete design system (aesthetic, typography, color, layout, spacing, motion), and
-  generates font+color preview pages. Creates DESIGN.md as your project's design source
-  of truth. For existing sites, use /plan-design-review to infer the system instead.
-  Use when asked to "design system", "brand guidelines", or "create DESIGN.md".
-  Proactively suggest when starting a new project's UI with no existing
-  design system or DESIGN.md. (gstack)
 allowed-tools:
-  - Bash
-  - Read
-  - Write
-  - Edit
-  - Glob
-  - Grep
-  - AskUserQuestion
-  - WebSearch
+- Bash
+- Read
+- Write
+- Edit
+- Glob
+- Grep
+- AskUserQuestion
+- WebSearch
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/design-consultation
+    repo: garrytan/gstack
+    trackingRef: main
+    url: https://github.com/garrytan/gstack/tree/main/skills/design-consultation
 ---
 <!-- AUTO-GENERATED from SKILL.md.tmpl — do not edit directly -->
 <!-- Regenerate: bun run gen:skill-docs -->

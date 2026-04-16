@@ -1,7 +1,16 @@
 ---
-slug: "icp-builder"
 name: icp-builder
+slug: icp-builder
+key: openclaudia/openclaudia-skills/icp-builder
 description: Define ideal customer profiles and buyer personas with structured frameworks. Use when the user asks about ideal customer profile, ICP, buyer persona, target audience definition, customer segmentation, customer research, user interviews, or persona creation. Trigger phrases include "ideal customer profile", "ICP", "buyer persona", "who is my customer", "target audience", "customer profile", "persona", "customer segmentation", "user research", "customer interview", "who should I target".
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/icp-builder
+    repo: openclaudia/openclaudia-skills
+    trackingRef: main
+    url: https://github.com/openclaudia/openclaudia-skills/tree/main/skills/icp-builder
 ---
 
 # Ideal Customer Profile (ICP) Builder

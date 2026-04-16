@@ -1,9 +1,18 @@
 ---
-slug: "follow-up"
 name: follow-up
+slug: follow-up
+key: humanizerai/agent-skills/follow-up
 description: Write follow-up emails that re-engage without being annoying. Uses proven psychology for follow-up sequences. 42% of replies come from follow-ups.
 user-invocable: true
-argument-hint: "[original email context] [days since sent] [follow-up number 1-3]"
+argument-hint: '[original email context] [days since sent] [follow-up number 1-3]'
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/follow-up
+    repo: humanizerai/agent-skills
+    trackingRef: main
+    url: https://github.com/humanizerai/agent-skills/tree/main/skills/follow-up
 ---
 
 # Write Follow-Up Email

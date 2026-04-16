@@ -1,11 +1,19 @@
 ---
-slug: "gtm-positioning-strategy"
 name: gtm-positioning-strategy
+slug: gtm-positioning-strategy
+key: github/awesome-copilot/gtm-positioning-strategy
 description: Find and own a defensible market position. Use when messaging sounds like competitors, conversion is weak despite awareness, repositioning a product, or testing positioning claims. Includes Crawl-Walk-Run rollout methodology and the word change that improved enterprise deal progression.
 license: MIT
 metadata:
   author: Smit Patel (https://linkedin.com/in/smitkpatel)
   source: https://github.com/beingsmit/technical-product-gtm
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/gtm-positioning-strategy
+    repo: github/awesome-copilot
+    trackingRef: main
+    url: https://github.com/github/awesome-copilot/tree/main/skills/gtm-positioning-strategy
 ---
 
 # Positioning Strategy

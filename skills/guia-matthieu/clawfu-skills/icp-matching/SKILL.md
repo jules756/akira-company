@@ -1,12 +1,20 @@
 ---
-slug: "icp-matching"
 name: icp-matching
+slug: icp-matching
+key: guia-matthieu/clawfu-skills/icp-matching
 description: Score and qualify prospects against your Ideal Customer Profile using firmographic, technographic, and behavioral criteria
 license: MIT
 metadata:
   author: ClawFu
   version: 1.0.0
-  mcp-server: "@clawfu/mcp-skills"
+  mcp-server: '@clawfu/mcp-skills'
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/icp-matching
+    repo: guia-matthieu/clawfu-skills
+    trackingRef: main
+    url: https://github.com/guia-matthieu/clawfu-skills/tree/main/skills/icp-matching
 ---
 
 # ICP Matching

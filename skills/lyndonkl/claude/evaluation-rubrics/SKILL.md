@@ -1,7 +1,16 @@
 ---
-slug: "evaluation-rubrics"
 name: evaluation-rubrics
+slug: evaluation-rubrics
+key: lyndonkl/claude/evaluation-rubrics
 description: Use when need explicit quality criteria and scoring scales to evaluate work consistently, compare alternatives objectively, set acceptance thresholds, reduce subjective bias, or when user mentions rubric, scoring criteria, quality standards, evaluation framework, inter-rater reliability, or grade/assess work.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/evaluation-rubrics
+    repo: lyndonkl/claude
+    trackingRef: main
+    url: https://github.com/lyndonkl/claude/tree/main/skills/evaluation-rubrics
 ---
 # Evaluation Rubrics
 

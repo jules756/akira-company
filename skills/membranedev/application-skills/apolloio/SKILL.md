@@ -1,16 +1,25 @@
 ---
-slug: "apolloio"
 name: apolloio
-description: |
-  Apollo.io integration. Manage Persons, Organizations, Deals, Leads, Pipelines, Users and more. Use when the user wants to interact with Apollo.io data.
+slug: apolloio
+key: membranedev/application-skills/apolloio
+description: 'Apollo.io integration. Manage Persons, Organizations, Deals, Leads, Pipelines, Users and more. Use when the user wants to interact with Apollo.io data.
+
+  '
 compatibility: Requires network access and a valid Membrane account (Free tier supported).
 license: MIT
 homepage: https://getmembrane.com
 repository: https://github.com/membranedev/application-skills
 metadata:
   author: membrane
-  version: "1.0"
-  categories: "Marketing Automation, Sales"
+  version: '1.0'
+  categories: Marketing Automation, Sales
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/apolloio
+    repo: membranedev/application-skills
+    trackingRef: main
+    url: https://github.com/membranedev/application-skills/tree/main/skills/apolloio
 ---
 
 # Apollo.io

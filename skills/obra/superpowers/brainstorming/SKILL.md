@@ -1,7 +1,16 @@
 ---
-slug: "brainstorming"
 name: brainstorming
-description: "You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation."
+slug: brainstorming
+key: obra/superpowers/brainstorming
+description: You MUST use this before any creative work - creating features, building components, adding functionality, or modifying behavior. Explores user intent, requirements and design before implementation.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/brainstorming
+    repo: obra/superpowers
+    trackingRef: main
+    url: https://github.com/obra/superpowers/tree/main/skills/brainstorming
 ---
 
 # Brainstorming Ideas Into Designs

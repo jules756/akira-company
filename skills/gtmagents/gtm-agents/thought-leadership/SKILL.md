@@ -1,7 +1,16 @@
 ---
-slug: "thought-leadership"
 name: thought-leadership
+slug: thought-leadership
+key: gtmagents/gtm-agents/thought-leadership
 description: Use when crafting executive POVs, visionary articles, or keynote narratives that elevate brand authority.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/thought-leadership
+    repo: gtmagents/gtm-agents
+    trackingRef: main
+    url: https://github.com/gtmagents/gtm-agents/tree/main/skills/thought-leadership
 ---
 
 # Thought Leadership Skill

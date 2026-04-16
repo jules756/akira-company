@@ -1,7 +1,16 @@
 ---
-slug: "go-to-market-plan"
 name: go-to-market-plan
+slug: go-to-market-plan
+key: ognjengt/founder-skills/go-to-market-plan
 description: Analyzes the founder's business context to deliver 3 best go-to-market strategies tailored to their current stage, product, and market. Asks up to 10 diagnostic questions when needed to understand product readiness, target market clarity, competitive positioning, and distribution channels. Use when user needs go-to-market strategy, launch planning, market entry strategy, or actionable GTM roadmap.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/go-to-market-plan
+    repo: ognjengt/founder-skills
+    trackingRef: main
+    url: https://github.com/ognjengt/founder-skills/tree/main/skills/go-to-market-plan
 ---
 
 # Go-to-Market Plan

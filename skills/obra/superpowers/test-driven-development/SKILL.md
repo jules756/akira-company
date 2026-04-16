@@ -1,7 +1,16 @@
 ---
-slug: "test-driven-development"
 name: test-driven-development
+slug: test-driven-development
+key: obra/superpowers/test-driven-development
 description: Use when implementing any feature or bugfix, before writing implementation code
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/test-driven-development
+    repo: obra/superpowers
+    trackingRef: main
+    url: https://github.com/obra/superpowers/tree/main/skills/test-driven-development
 ---
 
 # Test-Driven Development (TDD)

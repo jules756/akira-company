@@ -1,7 +1,16 @@
 ---
-slug: "viral-hook-creator"
 name: viral-hook-creator
+slug: viral-hook-creator
+key: ognjengt/founder-skills/viral-hook-creator
 description: Creates viral social media hooks using proven psychological patterns and trigger words. Use when user needs attention-grabbing openings for posts, threads, videos, or content.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/viral-hook-creator
+    repo: ognjengt/founder-skills
+    trackingRef: main
+    url: https://github.com/ognjengt/founder-skills/tree/main/skills/viral-hook-creator
 ---
 
 # Viral Hook Creator

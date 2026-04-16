@@ -1,7 +1,16 @@
 ---
-slug: "founder-sales"
 name: founder-sales
+slug: founder-sales
+key: refoundai/lenny-skills/founder-sales
 description: Help founders close their first customers and build repeatable sales processes. Use when someone is doing founder-led sales, trying to get their first customers, writing cold outreach, running early sales calls, or asking when to hire their first salesperson.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/founder-sales
+    repo: refoundai/lenny-skills
+    trackingRef: main
+    url: https://github.com/refoundai/lenny-skills/tree/main/skills/founder-sales
 ---
 
 # Founder Sales

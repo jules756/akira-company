@@ -1,12 +1,20 @@
 ---
-slug: "lead-qualification-bant"
 name: lead-qualification-bant
+slug: lead-qualification-bant
+key: guia-matthieu/clawfu-skills/lead-qualification-bant
 description: Qualify leads using the BANT framework (Budget, Authority, Need, Timeline) with discovery questions and scoring criteria
 license: MIT
 metadata:
   author: ClawFu
   version: 1.0.0
-  mcp-server: "@clawfu/mcp-skills"
+  mcp-server: '@clawfu/mcp-skills'
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/lead-qualification-bant
+    repo: guia-matthieu/clawfu-skills
+    trackingRef: main
+    url: https://github.com/guia-matthieu/clawfu-skills/tree/main/skills/lead-qualification-bant
 ---
 
 # Lead Qualification: BANT

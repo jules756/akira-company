@@ -1,7 +1,16 @@
 ---
-slug: "draft-outreach"
 name: draft-outreach
+slug: draft-outreach
+key: anthropics/knowledge-work-plugins/draft-outreach
 description: Research a prospect then draft personalized outreach. Uses web research by default, supercharged with enrichment and CRM. Trigger with "draft outreach to [person/company]", "write cold email to [prospect]", "reach out to [name]".
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/draft-outreach
+    repo: anthropics/knowledge-work-plugins
+    trackingRef: main
+    url: https://github.com/anthropics/knowledge-work-plugins/tree/main/skills/draft-outreach
 ---
 
 # Draft Outreach

@@ -1,7 +1,16 @@
 ---
-slug: "executing-plans"
 name: executing-plans
+slug: executing-plans
+key: obra/superpowers/executing-plans
 description: Use when you have a written implementation plan to execute in a separate session with review checkpoints
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/executing-plans
+    repo: obra/superpowers
+    trackingRef: main
+    url: https://github.com/obra/superpowers/tree/main/skills/executing-plans
 ---
 
 # Executing Plans

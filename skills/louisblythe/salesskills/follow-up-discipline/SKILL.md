@@ -1,7 +1,16 @@
 ---
-slug: "follow-up-discipline"
 name: follow-up-discipline
+slug: follow-up-discipline
+key: louisblythe/salesskills/follow-up-discipline
 description: When the user wants to improve their persistent but respectful outreach that keeps deals moving. Also use when the user mentions "following up," "staying on top of deals," "persistent outreach," "keeping deals alive," "not letting deals fall through," or "consistent follow-up."
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/follow-up-discipline
+    repo: louisblythe/salesskills
+    trackingRef: main
+    url: https://github.com/louisblythe/salesskills/tree/main/skills/follow-up-discipline
 ---
 
 # Follow-Up Discipline in Sales

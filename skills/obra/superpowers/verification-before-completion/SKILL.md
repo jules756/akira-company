@@ -1,7 +1,16 @@
 ---
-slug: "verification-before-completion"
 name: verification-before-completion
+slug: verification-before-completion
+key: obra/superpowers/verification-before-completion
 description: Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/verification-before-completion
+    repo: obra/superpowers
+    trackingRef: main
+    url: https://github.com/obra/superpowers/tree/main/skills/verification-before-completion
 ---
 
 # Verification Before Completion

@@ -1,7 +1,16 @@
 ---
-slug: "business-analytics-reporter"
 name: business-analytics-reporter
+slug: business-analytics-reporter
+key: ailabs-393/ai-labs-claude-skills/business-analytics-reporter
 description: This skill should be used when analyzing business sales and revenue data from CSV files to identify weak areas, generate statistical insights, and provide strategic improvement recommendations. Use when the user requests a business performance report, asks to analyze sales data, wants to identify areas of weakness, or needs recommendations on business improvement strategies.
+metadata:
+  sources:
+  - kind: github-dir
+    commit: null
+    path: skills/business-analytics-reporter
+    repo: ailabs-393/ai-labs-claude-skills
+    trackingRef: main
+    url: https://github.com/ailabs-393/ai-labs-claude-skills/tree/main/skills/business-analytics-reporter
 ---
 
 # Business Analytics Reporter
