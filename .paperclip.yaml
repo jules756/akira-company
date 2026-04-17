@@ -1,9 +1,9 @@
 schema: "paperclip/v1"
 agents:
   auditor:
-    role: "qa"
+    role: "general"
     icon: "eye"
-    capabilities: "Scores agent outputs against rubrics. Reports quality issues to CEO. Reads all agent runs, logs, task history. Cannot edit agents, tasks, or take action."
+    capabilities: "Observational agent-performance reviewer. Scores every team agent daily against role-specific rubrics (not code — that's QA Engineer's job). Reports rubric scores + corrective recommendations to CEO. Reads all agent runs, comments, logs, task history. Cannot edit agents, tasks, or take action."
     adapter:
       config:
         dangerouslySkipPermissions: true
@@ -54,16 +54,42 @@ agents:
   founding-engineer:
     role: "engineer"
     icon: "code"
-    capabilities: "Builder mode. Ships CTO-locked plans. Owns Akira's core platform + reusable skills (flagship: future email-skill to replace n8n) + complex magnet builds on Cloudflare Pages. TDD + verification-before-completion + systematic-debugging discipline. Never ships without CTO review. Reports to CTO."
+    capabilities: "Builder mode. Ships CTO-locked plans. Owns Akira's core platform + reusable skills (flagship: future email-skill to replace n8n) + magnet backend logic (DB/auth/integration on Vercel + Supabase; the page itself is Web Operations). TDD + verification-before-completion + systematic-debugging discipline. Never ships without CTO review. Reports to CTO."
     adapter:
       config:
         dangerouslySkipPermissions: true
         model: "azure-grok/grok-4-1-fast-non-reasoning"
       type: "opencode_local"
+  deployment-engineer:
+    role: "engineer"
+    icon: "server"
+    capabilities: "Fleet-manager mode. Spins up a brand-new Hetzner VM + dedicated Supabase project + clientname.akira-agent.com Vercel subdomain + Composio entity per new client; deploys the Amis Docker image; runs the Email Crawler; verifies healthcheck; hands off to Implementation Engineer. Also provisions internal dev VMs for Jules/CTO with TTL. Owns fleet health (hourly scan), skill rollouts (pull model), rollbacks, churn teardown (DPA export + destroy), cost accounting. Never writes skills, never touches per-client config, never contacts clients directly. Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 3600
+  qa-engineer:
+    role: "qa"
+    icon: "shield-check"
+    capabilities: "Code-QA mode. Distinct from Auditor — QA tests code; Auditor scores agent behaviour. Gates every :candidate → :stable Amis image through the promotion-gate test matrix. Runs fleet regression after every rollout + nightly. Reproduces live-client bugs into permanent regression tests before Founding Engineer fixes them. Maintains the test matrix and synthetic fixtures. Never writes skill code — bugs go to Founding Engineer. Reports to CTO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 86400
   implementation-engineer:
     role: "engineer"
-    icon: "plug"
-    capabilities: "Per-client delivery mode. Turns a signed Proposal into a live Vapi+Twilio+Cal.com voice bot. Owns each client from Building → Feedback → Production → Maintenance. Per-client configs versioned in life/areas/clients/<slug>/ (voice-log, twilio, integrations, runbook, incidents). Reports to CTO."
+    icon: "life-buoy"
+    capabilities: "Client-support mode. First line of support for live clients, Stage-4 Testing feedback collector, pattern surfacer back to Founding Engineer. Reviews knowledge-index files with clients during Stage-2 validation. Monitors Supabase logs per client; triages issues (skill bug → QA Engineer / config → client portal / deploy → Deployment Engineer / integration → client reauth). Maintains per-client dossiers (README, feedback-log, support-log, observations, handoff-to-csm). Does NOT provision infrastructure (that's Deployment Engineer), never modifies skill code (that's Founding Engineer), never writes regression tests (that's QA Engineer), never edits client config (that's the client's portal). Reports to CTO."
     adapter:
       config:
         dangerouslySkipPermissions: true
@@ -269,6 +295,15 @@ agents:
       heartbeat:
         enabled: true
         intervalSec: 86400
+  legal-counsel:
+    role: "general"
+    icon: "scale"
+    capabilities: "Turns signed Proposals into client-ready contracts (MSA + DPA always; SOW when bespoke). Files in Google Drive under Akira/Clients/<slug>/Contracts/ and sends via Google Drive eSignature after Jules approves. Hard-gated: never sends without explicit approval. Maintains SE/NO template library + jurisdiction notes. Reports to CEO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
 company:
   feedbackDataSharingConsentAt: "2026-04-15T14:05:40.107Z"
   feedbackDataSharingConsentByUserId: "yL7SsZqEKk06CGfFkjVzZtfxX5rvRGW4"
@@ -293,6 +328,9 @@ projects:
   company-ops:
     color: "#64748b"
     status: "in_progress"
+  fleet-ops:
+    color: "#14b8a6"
+    status: "in_progress"
   web-publishing:
     color: "#0ea5e9"
     status: "in_progress"
@@ -303,9 +341,12 @@ sidebar:
   agents:
     - "ceo"
     - "auditor"
+    - "legal-counsel"
     - "customer-success-manager"
     - "cto"
     - "founding-engineer"
+    - "qa-engineer"
+    - "deployment-engineer"
     - "implementation-engineer"
     - "ux-designer"
     - "product-manager"

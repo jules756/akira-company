@@ -9,7 +9,7 @@ Required:
 - `COMPOSIO_API_KEY`, `COMPOSIO_ENTITY_ID`
 - `GOAL_ID`
 - `GITHUB_CREDENTIALS_REF` (for repo access — set when repos exist)
-- Stack-specific secrets as needed: `VAPI_API_KEY`, `TWILIO_*`, `SUPABASE_*`, `CLOUDFLARE_*` (add when building the relevant module).
+- Stack-specific secrets as needed: `VAPI_API_KEY`, `TWILIO_*`, `SUPABASE_*` (add when building the relevant module).
 
 Missing → comment, `blocked`, exit.
 
@@ -94,7 +94,7 @@ Use `ship` skill. Checklist:
 - Rebase clean on main.
 - Merge (no `--no-verify`).
 - Version bump if relevant.
-- Deploy to target environment (Cloudflare / Supabase migration).
+- Deploy to target environment (Vercel preview → prod / Supabase migration).
 - Smoke test in prod.
 - Comment the shipped status on the origin issue; reassign to requester with `status=done`.
 - **If the merge promotes a library skill to `production`:** update [`life/areas/skill-library.md`](life/areas/skill-library.md) (change state, add deploy pattern, add price / languages / limits) AND notify Customer Success Manager via a comment on the CEO "Engineering Retro" issue tagging them: `New library skill live: <slug>. Trigger upsell sweep.` This is how the library compounds into revenue.

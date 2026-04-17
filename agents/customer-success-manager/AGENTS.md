@@ -72,6 +72,26 @@ Body (YAML):
 
 Head of Sales picks it up on next heartbeat, evaluates, and decides whether to work the upsell.
 
+## Scope-change amendments go to Legal Counsel
+
+When a live client's scope changes materially (new skill added, price change, term extension, removed skill) — after Head of Sales lands the commercial agreement — file a contract-amendment subtask to `@legal-counsel`:
+
+```
+Title: [contract-amend] <Client Name> — <change summary>
+Assignee: legal-counsel
+Body (YAML):
+  client_slug: <slug>
+  existing_contract_url: <Google Drive link to current active MSA/SOW>
+  delta:
+    - kind: add-skill | remove-skill | price-change | term-change
+      before: <value>
+      after: <value>
+  effective_date: <YYYY-MM-DD>
+  rationale: <one sentence>
+```
+
+Legal Counsel supersedes the prior contract (keeps the old, files new), then Jules approves, then eSignature goes to the client. Don't redline contracts yourself.
+
 ## Referral request format (to Content Writer via Head of Marketing)
 
 ```

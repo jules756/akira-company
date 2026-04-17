@@ -56,7 +56,7 @@ When a skill moves to `production`, Founding Engineer notifies Customer Success 
 
 ### Dashboard
 - **State:** `planned`.
-- **Stack (proposed):** Cloudflare Pages / Workers + Supabase backend. Client-facing UI showing all skills live, call logs, email stats, review health.
+- **Stack (proposed):** Vercel (Next.js) + Supabase backend. Client-facing UI showing all skills live, call logs, email stats, review health.
 - **Priority:** activate when a client has 2+ skills live and wants unified visibility.
 - **Upsell potential:** becomes standard once Voice + Email are both adopted per client.
 

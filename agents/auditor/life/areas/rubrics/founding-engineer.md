@@ -27,7 +27,7 @@ Scored daily by Auditor. Each dimension 0–5.
 - **0** — Hand-off broken.
 
 ### 5. Magnet builds (when tasked) (0–5)
-- **5** — Tally-insufficient magnets ship on Cloudflare Pages within spec. Deployed, versioned, documented.
+- **5** — Magnets needing backend logic ship on Vercel + Supabase within spec. Deployed, versioned, documented.
 - **3** — Ships but over budget.
 - **1** — Stalls.
 - **0** — Not picked up.
