@@ -14,7 +14,7 @@
 |---|---|
 | Agents | 26 |
 | Teams | 4 (Sales, Marketing, Web, Engineering & Product) |
-| Projects | 9 |
+| Projects | 12 |
 | Skills | 74 |
 | Scheduled routines | 19 |
 
@@ -98,9 +98,12 @@ See [`teams/`](teams/) for per-team manifests and [`agents/<slug>/AGENTS.md`](ag
 | `demand-creation` | in_progress | Head of Marketing |
 | `sales-pipeline` | in_progress | Head of Sales |
 | `skill-library-delivery` | in_progress | CTO |
-| `customer-success` | in_progress | Customer Success Manager |
-| `company-ops` | in_progress | CEO |
+| `quality-assurance` | in_progress | QA Engineer |
 | `fleet-ops` | in_progress | Deployment Engineer |
+| `customer-success` | in_progress | Customer Success Manager |
+| `research-ops` | in_progress | Research Coordinator |
+| `legal-compliance` | in_progress | Legal Counsel |
+| `company-ops` | in_progress | CEO |
 | `web-publishing` | in_progress | Head of Marketing |
 | `seo-aeo-growth` | in_progress | SEO + AEO Specialist |
 

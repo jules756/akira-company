@@ -344,6 +344,15 @@ projects:
   fleet-ops:
     color: "#14b8a6"
     status: "in_progress"
+  quality-assurance:
+    color: "#a855f7"
+    status: "in_progress"
+  legal-compliance:
+    color: "#94a3b8"
+    status: "in_progress"
+  research-ops:
+    color: "#eab308"
+    status: "in_progress"
   web-publishing:
     color: "#0ea5e9"
     status: "in_progress"
@@ -385,7 +394,11 @@ sidebar:
     - "web-publishing"
     - "sales-pipeline"
     - "skill-library-delivery"
+    - "quality-assurance"
+    - "fleet-ops"
     - "customer-success"
+    - "research-ops"
+    - "legal-compliance"
     - "company-ops"
 teams:
   - "engineering"
