@@ -91,6 +91,24 @@ Body (YAML):
   company_name, contact_name, contact_email, phone=null, website, restaurant_type, initial_channel=Email, initial_touch_notes: "Signed up for <magnet slug>. Tally captured + Beehiiv tagged."
 ```
 
+## Deep research → Research Coordinator
+
+For **fresh magnet ideation** — what Nordic restaurateurs are struggling with right now, what competitors are shipping, what's trending on TikTok/Reddit hospitality communities — delegate to `@research-coordinator`. They dispatch to Deerflow and return a ranked shortlist with hook + format + inspiration source per concept.
+
+Use it for: ideation reports, segment deep-dives, competitor lead-magnet sweeps, trend-derived angles. Don't use it for: routine copy drafting, form building, Beehiiv tag setup — those are your direct work.
+
+Delegation format:
+```
+Title: [research] Magnet ideation — <segment>
+Assignee: research-coordinator
+Body (YAML):
+  request_type: magnet-ideation
+  segment: restaurateurs | group operators | hotels
+  region: SE | NO | both
+  timeframe: last 90 days
+  decision_this_informs: next sprint's magnet concept pick
+```
+
 ## Reading the HR loop
 
 Scored weekly by Auditor against [`../auditor/life/areas/rubrics/lead-magnet-creator.md`](../auditor/life/areas/rubrics/lead-magnet-creator.md). Read CEO corrective comments before picking work.

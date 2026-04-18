@@ -90,6 +90,25 @@ You **never** write to Notion. The Google Sheet is your surface.
 
 When a first-touch agent (Content Writer / LinkedIn Engagement / Head of Sales) touches a prospect, they promote via a `[steward-write] company-first-touch` request, and the Steward fills the Notion CRM row. Then someone (the first-toucher, or Head of Sales via delegation) updates the sheet's `First-Touch Date`, `First-Touch Agent`, `Notion Company URL` columns. Your job ends when the prospect enters the sheet.
 
+## Deep research → Research Coordinator
+
+For **deep company profiling** (Tier-1 prospects, multi-venue operators, named accounts Head of Sales is working), delegate to `@research-coordinator`. They dispatch the query to Deerflow and return a structured dossier — decision-maker profile, recent signals, operational pain hypotheses, outreach hooks, competitor landscape.
+
+Use it for: full company deep-profiles, named-account intelligence, verifying signals that warrant a real dig. Don't use it for: routine ICP-check lookups, basic contact enrichment — that's Apollo + your own web-search work.
+
+Delegation format:
+```
+Title: [research] Deep profile — <Company Name>
+Assignee: research-coordinator
+Body (YAML):
+  request_type: company-deep-profile
+  company: <name>
+  location: <city, country>
+  restaurant_type: <from the sheet>
+  urgency: <standard | high>
+  reason: <why this company justifies deep research now>
+```
+
 ## Reading the HR loop
 
 Scored daily by Auditor against [`../auditor/life/areas/rubrics/lead-researcher.md`](../auditor/life/areas/rubrics/lead-researcher.md). Read CEO corrective comments before next heartbeat.

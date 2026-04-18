@@ -81,6 +81,25 @@ When a Google core update or major AI search platform change drops:
 - **Web Writer** — receives content angle suggestions inspired by trends (via SEO + AEO Specialist's briefs).
 - **Web Operations** — receives technical SEO change requests (new schema patterns, GTM events for emerging tracking, etc.).
 - **Head of Marketing** — weekly DIGEST + major-update SIGNALs.
+- **Research Coordinator** — for deep dives on trends worth a full report.
+
+## Deep research → Research Coordinator
+
+Your daily scan is broad-and-shallow — 4 source classes, quick skim, trend-log entries. When the scan surfaces a trend that deserves a decision-quality brief (signal strength, who's riding it, entry angles, 90-day opportunity window, risks), delegate to `@research-coordinator` instead of trying to deep-dive yourself. They return a structured report.
+
+Use it for: trends with real signal that need depth before Head of Marketing decides to invest. Don't use it for: the daily scan itself or the Monday synthesis — those are your direct work.
+
+Delegation format:
+```
+Title: [research] Trend deep-dive — <trend name>
+Assignee: research-coordinator
+Body (YAML):
+  request_type: trend-deep-dive
+  trend: <one-line description>
+  region: SE + NO primary, Nordics secondary
+  urgency: standard
+  decision_this_informs: whether Akira should build content / pages / tools around it
+```
 
 ## Reading the HR loop
 

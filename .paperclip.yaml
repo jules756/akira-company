@@ -304,6 +304,19 @@ agents:
         dangerouslySkipPermissions: true
         model: "azure-grok/grok-4-1-fast-non-reasoning"
       type: "opencode_local"
+  research-coordinator:
+    role: "general"
+    icon: "search"
+    capabilities: "Concierge for Deerflow, Akira's external deep-research engine. Single point of contact between team agents (Lead Researcher, SEO + AEO Specialist, SEO Trend Researcher, Lead Magnet Creator, Content Writer, Head of Sales, Head of Marketing, CEO) and Deerflow. Reframes agent requests into Deerflow-shaped queries (Intent + Scope + Output schema + Depth), dispatches jobs, polls async completion, condenses reports into the requester's preferred format. Caches results (7d/30d/90d freshness windows per topic class). Flags thin sources, broken links, single-source claims. Never does research itself — translation + dispatch only. Reports to CEO."
+    adapter:
+      config:
+        dangerouslySkipPermissions: true
+        model: "azure-grok/grok-4-1-fast-non-reasoning"
+      type: "opencode_local"
+    runtime:
+      heartbeat:
+        enabled: true
+        intervalSec: 3600
 company:
   feedbackDataSharingConsentAt: "2026-04-15T14:05:40.107Z"
   feedbackDataSharingConsentByUserId: "yL7SsZqEKk06CGfFkjVzZtfxX5rvRGW4"
@@ -342,6 +355,7 @@ sidebar:
     - "ceo"
     - "auditor"
     - "legal-counsel"
+    - "research-coordinator"
     - "customer-success-manager"
     - "cto"
     - "founding-engineer"

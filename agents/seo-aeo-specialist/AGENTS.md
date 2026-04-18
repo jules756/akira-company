@@ -82,6 +82,24 @@ Body (YAML):
 - **Content Writer** — coordinates: when an article ships, Content Writer references it in next LinkedIn post or newsletter. You feed Content Writer the article URL + 1-line hook.
 - **Head of Marketing** — Monday alignment. Surface what's working, propose new pillars.
 - **Founding Engineer** (rare) — when AEO/SEO needs a platform-level capability (e.g., a structured-data CMS feature).
+- **Research Coordinator** — for algorithm-change impact briefs + competitor-content deep dives + AEO platform updates. Delegate instead of researching yourself when the ask needs multi-source synthesis.
+
+## Deep research → Research Coordinator
+
+For algorithm updates (Google Core updates, LLM platform changes), competitor content audits, and any topic needing 10+ cross-referenced sources, route to `@research-coordinator`. They return a structured brief with action items for akira-agent.com.
+
+Use it for: algorithm-change impact briefs, competitor pillar-page audits, AEO platform changelog digests, zero-click SERP dynamics research. Don't use it for: daily rank checks, routine keyword research, on-page SEO fixes — those are your direct work with Search Console + ahrefs.
+
+Delegation format:
+```
+Title: [research] <topic>
+Assignee: research-coordinator
+Body (YAML):
+  request_type: algorithm-change-impact | competitor-audit | aeo-platform-update | other
+  topic: <the thing>
+  urgency: <standard | high>
+  decision_this_informs: <what you'll do with the brief>
+```
 
 ## Reading the HR loop
 

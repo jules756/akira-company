@@ -12,10 +12,10 @@
 
 | | Count |
 |---|---|
-| Agents | 25 |
+| Agents | 26 |
 | Teams | 4 (Sales, Marketing, Web, Engineering & Product) |
 | Projects | 9 |
-| Skills | 73 |
+| Skills | 74 |
 | Scheduled routines | 19 |
 
 ## How the team is organised
@@ -26,6 +26,7 @@ Everything is a tree rooted at CEO. The Auditor observes; Legal Counsel files co
 CEO
 ├── Auditor                   # scores agents against role rubrics
 ├── Legal Counsel             # MSA + DPA + eSignature via Google Drive
+├── Research Coordinator      # Deerflow concierge for every team's research asks
 ├── Customer Success Manager  # retention, upsell, referral
 ├── CTO                       # locks plans, gates reviews
 │   ├── Founding Engineer        # writes the Amis skills
