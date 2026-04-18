@@ -7,8 +7,6 @@ skills:
   - "paperclipai/paperclip/para-memory-files"
   - "composiohq/skills/composio"
   - "tool-belt/skills/web-search"
-  - "coreyhaines31/marketingskills/seo-audit"
-  - "coreyhaines31/marketingskills/programmatic-seo"
   - "coreyhaines31/marketingskills/ai-seo"
   - "resciencelab/opc-skills/seo-geo"
   - "aaron-he-zhu/seo-geo-claude-skills/backlink-analyzer"

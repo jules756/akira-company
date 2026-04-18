@@ -48,7 +48,7 @@ Typical types:
 
 1. Count unprocessed briefs in `keyword-roadmap.md` (briefs Web Writer hasn't pulled yet).
 2. If <8 briefs ahead → spend this heartbeat producing 2-3 new briefs from the next-priority cluster.
-3. Use `coreyhaines31/marketingskills/seo-audit` + `ai-seo` + `resciencelab/opc-skills/seo-geo` skills to inform brief content.
+3. Use `coreyhaines31/marketingskills/ai-seo` + `coreyhaines31/marketingskills/content-strategy` + `resciencelab/opc-skills/seo-geo` skills to inform brief content.
 
 ## 6. Brief production (per brief)
 
@@ -121,7 +121,7 @@ Briefs queued for Web Writer: <count> (covers next <weeks>)
 When asked to audit a specific page:
 
 1. Pull the page via Composio + web-search.
-2. Run `seo-audit` skill mentally: title, meta, H1, content depth, internal links, schema, page speed (estimate from CWV).
+2. Audit the page against the SEO checklist: title, meta, H1, content depth, internal links, schema, page speed (estimate from CWV).
 3. Run `ai-seo` skill: AEO answer block present? Citable structure?
 4. Output: list of fixes, prioritized.
 

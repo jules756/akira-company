@@ -8,7 +8,6 @@ skills:
   - "composiohq/skills/composio"
   - "tool-belt/skills/web-search"
   - "coreyhaines31/marketingskills/ai-seo"
-  - "coreyhaines31/marketingskills/seo-audit"
   - "resciencelab/opc-skills/seo-geo"
   - "aaron-he-zhu/seo-geo-claude-skills/backlink-analyzer"
 ---
