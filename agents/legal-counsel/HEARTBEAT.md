@@ -30,7 +30,7 @@ If `PAPERCLIP_APPROVAL_ID` is set, resolve it before anything else:
 
 ## 3. HR loop
 
-Read the last two Auditor scores against [`../auditor/life/areas/rubrics/legal-counsel.md`](../auditor/life/areas/rubrics/legal-counsel.md). If a CEO corrective comment cites a rubric dimension, address it in this heartbeat.
+Read the last two Auditor scores against [`../auditor/rubrics/legal-counsel.md`](../auditor/rubrics/legal-counsel.md). If a CEO corrective comment cites a rubric dimension, address it in this heartbeat.
 
 ## 4. Assignments
 
@@ -94,7 +94,7 @@ When Jules comments a change request on a draft:
 When you notice three+ recent contracts manually edited on the same clause, or a jurisdiction change:
 1. Update the template in `life/resources/templates/<name>.md`.
 2. Bump the version in its frontmatter.
-3. Append a dated note to `life/areas/jurisdiction-notes.md` explaining the why.
+3. Append a dated note to `knowledge/jurisdiction-notes.md` explaining the why.
 4. Comment on CEO's standing "Legal Ops" issue with the change summary.
 
 ## 9. Exit

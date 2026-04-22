@@ -10,8 +10,8 @@ Run this checklist on every heartbeat. This covers both your local planning/memo
 ## 1a. Read governance + founder role
 
 Every heartbeat, read:
-- [`life/areas/governance.md`](life/areas/governance.md) — current governance phase, approval gates, audit cadence.
-- [`life/areas/founder-role.md`](life/areas/founder-role.md) — what's Jules's vs. yours. When in doubt, defer to Jules.
+- [`knowledge/governance.md`](knowledge/governance.md) — current governance phase, approval gates, audit cadence.
+- [`knowledge/founder-role.md`](knowledge/founder-role.md) — what's Jules's vs. yours. When in doubt, defer to Jules.
 
 These files tell you when to approve-in-place vs. route to Jules, and when to escalate vs. act.
 

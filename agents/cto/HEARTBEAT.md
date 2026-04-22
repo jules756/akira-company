@@ -22,7 +22,7 @@ Read wake vars. Note the weekday (Friday = retro day).
 
 ## 2. Read context
 
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md) — the 500K SEK MRR goal.
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md) — the 500K SEK MRR goal.
 - [`life/areas/decisions/`](life/areas/decisions/) — your own decision trail. Scan for any in-flight discussions.
 - CEO's standing "Engineering Retro" issue — review last retro before starting this week's work.
 
