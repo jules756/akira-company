@@ -22,9 +22,9 @@ Read wake vars.
 
 ## 2. Read state
 
-- [`life/areas/magnet-pipeline.md`](life/areas/magnet-pipeline.md) — ranked candidate ideas.
-- [`life/areas/magnet-library.md`](life/areas/magnet-library.md) — live + killed magnets.
-- [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) — team direction + learnings.
+- [`knowledge/magnet-pipeline.md`](knowledge/magnet-pipeline.md) — ranked candidate ideas.
+- [`knowledge/magnet-library.md`](knowledge/magnet-library.md) — live + killed magnets.
+- [`../head-of-marketing/knowledge/content-playbook.md`](../head-of-marketing/knowledge/content-playbook.md) — team direction + learnings.
 
 ## 3. Approvals
 
@@ -55,7 +55,7 @@ Run in this order:
 3. **Web search** using `tool-belt/skills/web-search` for Nordic hospitality trends — labor costs, regulation, tech adoption, competitor moves.
 4. **Brainstorm** using `obra/superpowers/brainstorming` skill. Generate 10 candidate magnet ideas (intentionally long list), then narrow.
 5. **Rank** the top 3–5 using the scoring criteria in `magnet-pipeline.md` (ICP pull, Signal quality, Buildability, Uniqueness).
-6. **Update** `life/areas/magnet-pipeline.md` — prepend this week's ranked ideas with evidence for each.
+6. **Update** `knowledge/magnet-pipeline.md` — prepend this week's ranked ideas with evidence for each.
 7. **Post DIGEST** on Head of Marketing's standing issue: "Week of YYYY-MM-DD ideation — top 3: <ids>. Proposed to approve: <id> for build." Wait for approval reply.
 
 ## 7. Build workflow — Tally magnet

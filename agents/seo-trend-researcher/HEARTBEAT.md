@@ -21,9 +21,9 @@ Note weekday.
 
 ## 2. Read state
 
-- [`life/areas/trend-log.md`](life/areas/trend-log.md) — yesterday's scan (avoid duplication).
-- [`life/areas/source-list.md`](life/areas/source-list.md) — what to scan.
-- [`../seo-aeo-specialist/life/areas/seo-playbook.md`](../seo-aeo-specialist/life/areas/seo-playbook.md) — current playbook (so you know what's already validated).
+- [`knowledge/trend-log.md`](knowledge/trend-log.md) — yesterday's scan (avoid duplication).
+- [`knowledge/source-list.md`](knowledge/source-list.md) — what to scan.
+- [`../seo-aeo-specialist/knowledge/seo-playbook.md`](../seo-aeo-specialist/knowledge/seo-playbook.md) — current playbook (so you know what's already validated).
 
 ## 3. Approvals + HR loop
 

@@ -27,8 +27,8 @@ Note weekday.
 
 ## 2. Read state
 
-- [`life/areas/deployment-playbook.md`](life/areas/deployment-playbook.md) — your SOPs.
-- [`life/areas/analytics-tracking-spec.md`](life/areas/analytics-tracking-spec.md) — current event taxonomy.
+- [`knowledge/deployment-playbook.md`](knowledge/deployment-playbook.md) — your SOPs.
+- [`knowledge/analytics-tracking-spec.md`](knowledge/analytics-tracking-spec.md) — current event taxonomy.
 - Last Vercel deploy log (via Composio).
 
 ## 3. Approvals + HR loop
