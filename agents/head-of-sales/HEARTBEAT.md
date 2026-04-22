@@ -23,13 +23,13 @@ Read wake vars: `PAPERCLIP_TASK_ID`, `PAPERCLIP_WAKE_REASON`, `PAPERCLIP_WAKE_CO
 
 ## 2. Read the schema
 
-Open [`../crm-steward/life/areas/crm-schema.md`](../crm-steward/life/areas/crm-schema.md). Read today's snapshot. Note current pipeline stage options and field names. Do not proceed on a stale snapshot — if the file is >24h old, post a comment to the CRM Steward's "CRM Daily" issue asking for refresh, and pick a different task this heartbeat.
+Open [`../crm-steward/knowledge/crm-schema.md`](../crm-steward/knowledge/crm-schema.md). Read today's snapshot. Note current pipeline stage options and field names. Do not proceed on a stale snapshot — if the file is >24h old, post a comment to the CRM Steward's "CRM Daily" issue asking for refresh, and pick a different task this heartbeat.
 
 Also check the "CRM Daily" issue for any new `SCHEMA CHANGE` or `SIGNAL` comments from CRM Steward.
 
 ## 3. Read the rules
 
-Open [`life/areas/notion-protocol.md`](life/areas/notion-protocol.md). Re-read Who-edits-what and Never-do sections on every heartbeat. They're the guardrails.
+Open [`knowledge/notion-protocol.md`](knowledge/notion-protocol.md). Re-read Who-edits-what and Never-do sections on every heartbeat. They're the guardrails.
 
 ## 4. Approvals
 

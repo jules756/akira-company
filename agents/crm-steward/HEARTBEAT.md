@@ -33,8 +33,8 @@ Decide which mode to run:
 
 ## 2. Read the rules
 
-- Open [`../head-of-sales/life/areas/notion-protocol.md`](../head-of-sales/life/areas/notion-protocol.md). Re-read "Who requests what" and "Never-do" every heartbeat.
-- Open `life/areas/crm-schema.md` — your "before" state.
+- Open [`../head-of-sales/knowledge/notion-protocol.md`](../head-of-sales/knowledge/notion-protocol.md). Re-read "Who requests what" and "Never-do" every heartbeat.
+- Open `knowledge/crm-schema.md` — your "before" state.
 
 ## 3. Approvals
 
