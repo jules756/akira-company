@@ -28,7 +28,7 @@ Handle `PAPERCLIP_APPROVAL_ID` if set (rarely relevant — approvals flow to CTO
 
 ## 3. HR loop
 
-Scan latest Auditor scores against [`../auditor/life/areas/rubrics/qa-engineer.md`](../auditor/life/areas/rubrics/qa-engineer.md). CEO corrective comments → address this heartbeat.
+Scan latest Auditor scores against [`../auditor/rubrics/qa-engineer.md`](../auditor/rubrics/qa-engineer.md). CEO corrective comments → address this heartbeat.
 
 ## 4. Assignments
 
@@ -79,7 +79,7 @@ When Deployment Engineer comments "rollout complete" on the Rollout Queue:
 3. For each picked VM: send a sentinel test email to the client's monitored inbox with subject `[akira-fleet-smoke-<date>]`.
 4. Wait 10 minutes. Query each client's Supabase logs for the sentinel email's classifier entry. Expect the classifier to have processed it.
 5. **If all profiles green:** comment on the Rollout Queue: `Fleet regression ✓. <N> profiles passed.`
-6. **If any red:** comment on the Rollout Queue + Deployment Engineer's fleet scan issue: `Fleet regression ✗ on profile <X>. Roll back.` Log the full failure in [`life/areas/test-incidents.md`](life/areas/test-incidents.md).
+6. **If any red:** comment on the Rollout Queue + Deployment Engineer's fleet scan issue: `Fleet regression ✗ on profile <X>. Roll back.` Log the full failure in [`knowledge/test-incidents.md`](knowledge/test-incidents.md).
 
 ## 7. Bug-reproduction mode (live-client bug)
 
@@ -103,7 +103,7 @@ When Implementation Engineer reports a live-client bug:
 Once daily (typically 03:00 CET during low-traffic window):
 1. Run the same fleet-smoke suite as §6 against every live client VM.
 2. Pass rate < 100% → open a `regression detected` issue; page Jules via Telegram when that's wired.
-3. Log results to [`life/areas/test-incidents.md`](life/areas/test-incidents.md) — append-only.
+3. Log results to [`knowledge/test-incidents.md`](knowledge/test-incidents.md) — append-only.
 
 ## 9. Test matrix extension (pairing with Founding Engineer)
 
