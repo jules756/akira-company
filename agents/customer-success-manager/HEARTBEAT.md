@@ -23,9 +23,9 @@ Read wake vars. Note weekday + day-of-month.
 
 ## 2. Read state
 
-- [`life/areas/client-health.md`](life/areas/client-health.md) — yesterday's scorecard.
-- [`life/areas/retention-playbook.md`](life/areas/retention-playbook.md) — SLAs + templates.
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md) — alignment with the 1M SEK/mo North Star.
+- [`knowledge/client-health.md`](knowledge/client-health.md) — yesterday's scorecard.
+- [`knowledge/retention-playbook.md`](knowledge/retention-playbook.md) — SLAs + templates.
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md) — alignment with the 1M SEK/mo North Star.
 
 ## 3. Approvals + HR loop
 

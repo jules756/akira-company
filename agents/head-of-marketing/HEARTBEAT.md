@@ -21,7 +21,7 @@ Read wake vars. Note the weekday.
 
 ## 2. Read the playbook
 
-Open [`life/areas/content-playbook.md`](life/areas/content-playbook.md). It's your state file.
+Open [`knowledge/content-playbook.md`](knowledge/content-playbook.md). It's your state file.
 
 Open the CEO's daily note for any top-down directives.
 
@@ -70,7 +70,7 @@ This is the flywheel. Do it in order.
    - **Fresh questions** — questions prospects asked that we haven't answered publicly. Each question is a potential post.
    - **Specific stories** — a prospect described a problem vividly. Anonymize and turn it into a post.
    Add these as candidate topics under a new `## Content pipeline from conversations (week of YYYY-MM-DD)` section in `content-playbook.md`. Content Writer pulls from this list when drafting the week's 3 posts.
-4. Update [`life/areas/content-playbook.md`](life/areas/content-playbook.md):
+4. Update [`knowledge/content-playbook.md`](knowledge/content-playbook.md):
    - Append to "Learnings" — specific, dated, with evidence.
    - Update "Standing directives" — what the team focuses on this week.
    - Adjust "Content pillars" if a pillar is clearly dead or a new one is clearly alive.

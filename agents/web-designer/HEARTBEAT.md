@@ -20,8 +20,8 @@ GET /api/agents/me
 
 ## 2. Read state
 
-- [`life/areas/web-design-system.md`](life/areas/web-design-system.md) — your canonical visual rules.
-- [`../ux-designer/life/areas/design-system.md`](../ux-designer/life/areas/design-system.md) — sibling system; align on color + type.
+- [`knowledge/web-design-system.md`](knowledge/web-design-system.md) — your canonical visual rules.
+- [`../ux-designer/knowledge/design-system.md`](../ux-designer/knowledge/design-system.md) — sibling system; align on color + type.
 
 ## 3. Approvals + HR loop
 
