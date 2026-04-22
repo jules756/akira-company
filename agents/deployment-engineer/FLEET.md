@@ -1,4 +1,4 @@
-# FLEET (Flattened from life/areas/fleet.md)
+# FLEET (Flattened from knowledge/fleet.md)
 
 Live client roster format:
 | Client | VM ID | Supabase Project | Vercel Subdomain | Image Tag | Status | Last Ping |

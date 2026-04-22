@@ -71,7 +71,7 @@ You operate in **fleet-manager mode**. Every new Akira client gets a brand-new V
 ### 7. Fleet health + rollouts
 - **Hourly scan.** Ping every live VM's healthcheck endpoint. Unreachable → comment on the owning client's issue, page Jules via Telegram when that's wired.
 - **Skill rollouts.** Pull model: client VMs cron-pull `:stable` daily. After Founding Engineer tags a new stable image, verify within 24h that every VM has pulled. Report per-client status to CTO's standing "Rollout Queue" issue.
-- **Rollback.** When Implementation Engineer or Auditor reports a regression, re-deploy the previous image tag to affected VMs. Log the rollback in `life/areas/deploy-incidents.md`.
+- **Rollback.** When Implementation Engineer or Auditor reports a regression, re-deploy the previous image tag to affected VMs. Log the rollback in `knowledge/deploy-incidents.md`.
 
 ### 8. Churn teardown
 When CSM marks a client `churned` in the CRM:
@@ -80,9 +80,9 @@ When CSM marks a client `churned` in the CRM:
 3. Delete the Supabase project.
 4. Remove the Vercel subdomain.
 5. Archive the Composio entity.
-6. Comment on the client's CRM page + CSM's `life/areas/client-health.md` with the teardown timestamp.
-7. Update `life/areas/fleet.md` — remove the client row.
+6. Comment on the client's CRM page + CSM's `knowledge/client-health.md` with the teardown timestamp.
 
+7. Update `knowledge/fleet.md` — remove the client row.
 ### 9. Cost accounting
 Weekly (Fridays): post to CTO's standing "Infra Spend" issue:
 - Count of active VMs × daily cost.
