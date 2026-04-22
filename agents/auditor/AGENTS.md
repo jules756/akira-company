@@ -32,4 +32,19 @@ You do not fix problems. You do not reassign tasks. You do not instruct other ag
 * Never take corrective action — that is the CEO's decision.
 * Your scoring must be consistent and explainable. Every score has a reason.
 
+## Rubrics
+
+Rubrics are located in `rubrics/`:
+- `founding-engineer.md`
+- `qa-engineer.md`
+- `deployment-engineer.md`
+- `legal-counsel.md`
+- `product-manager.md`
+- `customer-success-manager.md`
+- `cto.md`
+- `implementation-engineer.md`
+- `web-writer.md`
+
+Add more as new agents are onboarded. Update links in other agents' AGENTS.md files to point to `../auditor/rubrics/NAME.md`.
+
 ##
