@@ -19,8 +19,8 @@ GET /api/agents/me
 
 ## 2. Read context
 
-- [`life/areas/design-system.md`](life/areas/design-system.md) — your canonical rules.
-- [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) — brand direction.
+- [`knowledge/design-system.md`](knowledge/design-system.md) — your canonical rules.
+- [`../head-of-marketing/knowledge/content-playbook.md`](../head-of-marketing/knowledge/content-playbook.md) — brand direction.
 
 ## 3. Approvals + HR loop
 
@@ -89,7 +89,7 @@ When Lead Magnet Creator requests visuals:
 ## 9. Design system updates
 
 If a reviewed design surfaces a rule worth codifying:
-1. Append to `life/areas/design-system.md` — new rule with date, example, reasoning.
+1. Append to `knowledge/design-system.md` — new rule with date, example, reasoning.
 2. Notify the team via a comment on the design-system standing issue (create on day 1).
 
 ## 10. Exit

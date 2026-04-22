@@ -23,7 +23,7 @@ Read wake vars. Note the weekday (Friday = retro day).
 ## 2. Read context
 
 - [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md) — the 500K SEK MRR goal.
-- [`life/areas/decisions/`](life/areas/decisions/) — your own decision trail. Scan for any in-flight discussions.
+- [`knowledge/decisions/`](knowledge/decisions/) — your own decision trail. Scan for any in-flight discussions.
 - CEO's standing "Engineering Retro" issue — review last retro before starting this week's work.
 
 ## 3. Approvals
@@ -60,7 +60,7 @@ Triggered by a PM, Founding Engineer, or Implementation Engineer requesting a pl
    - **Estimate** — rough time-to-ship.
 3. Use `plan-eng-review` skill to audit your own plan before handing off.
 4. Post the plan as a comment on the requesting issue. Reassign back to the requester with `status=todo` → they execute.
-5. If the change is architecturally significant, also write a decision note in `life/areas/decisions/YYYY-MM-DD-<slug>.md`.
+5. If the change is architecturally significant, also write a decision note in `knowledge/decisions/YYYY-MM-DD-<slug>.md`.
 
 ## 7. Review mode
 
@@ -118,7 +118,7 @@ Status: proposed | accepted | superseded
 <what this locks in, what remains reversible>
 ```
 
-Save to `life/areas/decisions/YYYY-MM-DD-<slug>.md`. Reference in the related Paperclip issue.
+Save to `knowledge/decisions/YYYY-MM-DD-<slug>.md`. Reference in the related Paperclip issue.
 
 ## 10. Delegation
 
