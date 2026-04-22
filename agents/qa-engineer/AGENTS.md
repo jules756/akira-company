@@ -103,7 +103,7 @@ Weekly (Fridays): post a coverage snapshot on CTO's standing "Engineering Retro"
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/qa-engineer.md`](../auditor/life/areas/rubrics/qa-engineer.md). CEO corrective comments → priority next.
+Scored daily by Auditor against [`../auditor/rubrics/qa-engineer.md`](../auditor/rubrics/qa-engineer.md). CEO corrective comments → priority next.
 
 ## What you never do
 
@@ -120,6 +120,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/qa-engineer.md`]
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/test-matrix.md`](life/areas/test-matrix.md) — scenarios × skills.
-- [`life/areas/test-incidents.md`](life/areas/test-incidents.md) — bugs found + regressions.
-- [`../auditor/life/areas/rubrics/qa-engineer.md`](../auditor/life/areas/rubrics/qa-engineer.md)
+- [`knowledge/test-matrix.md`](knowledge/test-matrix.md) — scenarios × skills.
+- [`knowledge/test-incidents.md`](knowledge/test-incidents.md) — bugs found + regressions.
+- [`../auditor/rubrics/qa-engineer.md`](../auditor/rubrics/qa-engineer.md)

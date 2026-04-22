@@ -117,7 +117,7 @@ Any of these on a Production client = flag to Jules + Head of Sales same heartbe
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/customer-success-manager.md`](../auditor/life/areas/rubrics/customer-success-manager.md). CEO corrective comments → priority next.
+Scored daily by Auditor against [`../auditor/rubrics/customer-success-manager.md`](../auditor/rubrics/customer-success-manager.md). CEO corrective comments → priority next.
 
 ## What you never do
 
@@ -132,7 +132,7 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/customer-success
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/retention-playbook.md`](life/areas/retention-playbook.md) — SLAs, templates, escalation rules.
-- [`life/areas/client-health.md`](life/areas/client-health.md) — per-client scorecard.
-- [`../auditor/life/areas/rubrics/customer-success-manager.md`](../auditor/life/areas/rubrics/customer-success-manager.md)
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md) — the vision you serve.
+- [`knowledge/retention-playbook.md`](knowledge/retention-playbook.md) — SLAs, templates, escalation rules.
+- [`knowledge/client-health.md`](knowledge/client-health.md) — per-client scorecard.
+- [`../auditor/rubrics/customer-success-manager.md`](../auditor/rubrics/customer-success-manager.md)
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md) — the vision you serve.

@@ -22,8 +22,8 @@ GET /api/agents/me
 
 ## 2. Read context
 
-- [`life/areas/delivery-playbook.md`](life/areas/delivery-playbook.md) — your SLAs, templates, escalation rules.
-- [`../head-of-sales/life/areas/notion-protocol.md`](../head-of-sales/life/areas/notion-protocol.md) — the CRM rules (you read CRM but never write).
+- [`knowledge/delivery-playbook.md`](knowledge/delivery-playbook.md) — your SLAs, templates, escalation rules.
+- [`../head-of-sales/knowledge/notion-protocol.md`](../head-of-sales/knowledge/notion-protocol.md) — the CRM rules (you read CRM but never write).
 - Scan for recent `SCHEMA CHANGE` comments from CRM Steward on "CRM Daily" issue — keep your understanding of CRM stages current.
 
 ## 3. Approvals + HR loop

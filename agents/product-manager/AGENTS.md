@@ -130,7 +130,7 @@ Scored daily by Auditor against the document in the projects. CEO corrective com
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/delivery-playbook.md`](life/areas/delivery-playbook.md) — SLAs, templates, escalation rules.
-- [`../auditor/life/areas/rubrics/product-manager.md`](../auditor/life/areas/rubrics/product-manager.md)
+- [`knowledge/delivery-playbook.md`](knowledge/delivery-playbook.md) — SLAs, templates, escalation rules.
+- [`../auditor/rubrics/product-manager.md`](../auditor/rubrics/product-manager.md)
 - Agents (The Bots) DB: `23979a0a-12ed-4714-a5bb-0d08818cd53b`
 - Proposals DB: `54d87250-5890-4d4f-a6b6-d77cd8cfdb65`
