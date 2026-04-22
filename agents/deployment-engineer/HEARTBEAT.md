@@ -30,7 +30,7 @@ Handle `PAPERCLIP_APPROVAL_ID` if set (new region, new provider — CTO-gated de
 
 ## 3. HR loop
 
-Read latest Auditor scores against [`../auditor/life/areas/rubrics/deployment-engineer.md`](../auditor/life/areas/rubrics/deployment-engineer.md). Address CEO corrective comments first.
+Read latest Auditor scores against [`../auditor/rubrics/deployment-engineer.md`](../auditor/rubrics/deployment-engineer.md). Address CEO corrective comments first.
 
 ## 4. Assignments
 
@@ -77,7 +77,7 @@ Comment progress after each sub-step. If any fails, set `blocked` with the speci
 5. On success: flip the agent from `paused` to `active` in Paperclip, comment deploy URL + version + healthcheck + smoke-test status, reassign to Implementation Engineer for Stage-4 (Testing) monitoring.
 
 ### Logging
-Append to [`life/areas/fleet.md`](life/areas/fleet.md): new client row with VM ID, Supabase project ID, subdomain URL, Amis version, date deployed.
+Append to [`knowledge/fleet.md`](knowledge/fleet.md): new client row with VM ID, Supabase project ID, subdomain URL, Amis version, date deployed.
 
 ## 6. Mode 2 — Internal-dev VM
 
