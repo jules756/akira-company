@@ -55,8 +55,8 @@ All cross-team deep-research flows through one concierge. Research Coordinator r
 
 ## References
 
-- [`research-queue.md`](../../agents/research-coordinator/life/areas/research-queue.md) — live queue.
-- [`deerflow-prompts.md`](../../agents/research-coordinator/life/areas/deerflow-prompts.md) — reframing templates.
+- [`research-queue.md`](../../agents/research-coordinator/knowledge/research-queue.md) — live queue.
+- [`deerflow-prompts.md`](../../agents/research-coordinator/knowledge/deerflow-prompts.md) — reframing templates.
 - [`deerflow-invocation`](../../skills/akira-agent/deerflow-invocation/SKILL.md) — API contract.
 
 ## Success criteria (ongoing)

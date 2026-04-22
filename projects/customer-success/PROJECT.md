@@ -25,8 +25,8 @@ Retention + library-driven upsell + referral. The second human function at Akira
 
 ## References
 
-- [`retention-playbook.md`](../../agents/customer-success-manager/life/areas/retention-playbook.md) — SLAs + templates + churn signals.
-- [`client-health.md`](../../agents/customer-success-manager/life/areas/client-health.md) — per-client scorecard.
+- [`retention-playbook.md`](../../agents/customer-success-manager/knowledge/retention-playbook.md) — SLAs + templates + churn signals.
+- [`client-health.md`](../../agents/customer-success-manager/knowledge/client-health.md) — per-client scorecard.
 - Use the document in the projects for the capability inventory — what's deployable for upsells.
 
 ## Success criteria (ongoing)

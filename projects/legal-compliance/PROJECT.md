@@ -39,7 +39,7 @@ Every contract, amendment, and data-protection obligation Akira carries lives he
 
 ## References
 
-- [`jurisdiction-notes.md`](../../agents/legal-counsel/life/areas/jurisdiction-notes.md) — SE vs NO quirks.
+- [`jurisdiction-notes.md`](../../agents/legal-counsel/knowledge/jurisdiction-notes.md) — SE vs NO quirks.
 - [`life/resources/templates/`](../../agents/legal-counsel/life/resources/templates/) — MSA-SE, MSA-NO, DPA, SOW, NDA.
 
 ## Success criteria (ongoing)
