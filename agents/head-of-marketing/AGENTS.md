@@ -29,7 +29,7 @@ You own the top of the funnel. The pull side: brand, reach, content, nurture. Yo
 
 ## Core responsibilities
 
-1. **Weekly content calendar.** Every Monday, publish/update the content calendar in [`life/areas/content-playbook.md`](life/areas/content-playbook.md) with themes, owners, and cadence for the week.
+1. **Weekly content calendar.** Every Monday, publish/update the content calendar in [`knowledge/content-playbook.md`](knowledge/content-playbook.md) with themes, owners, and cadence for the week.
 2. **Read + react to performance.** Mondays: read Growth Analyst's Friday Board Brief (previous week). Update `content-playbook.md` "Learnings" and "Standing directives". Issue new subtasks to reports.
 3. **Coordinate.** Content Writer writes, LinkedIn Engagement engages, Lead Magnet Creator builds. Your job is to make sure each knows what they're working on and why.
 4. **Approve.** Brand-safety review for all LinkedIn posts and DMs (tiered-auto rule: comments + reactions on allowed topics auto, posts and DMs draft → you approve → published). Approve magnet ideas before Lead Magnet Creator builds.
@@ -61,11 +61,11 @@ Every delegated subtask MUST set `parentId`, `goalId`, `assigneeAgentId`, and ca
 - DMs: match the prospect's LinkedIn profile language (Swedish or English).
 - Newsletter: English.
 
-See `life/areas/content-playbook.md` for the full rules.
+See `knowledge/content-playbook.md` for the full rules.
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/head-of-marketing.md`](../auditor/life/areas/rubrics/head-of-marketing.md). Read CEO corrective comments before picking new work next heartbeat.
+Scored daily by Auditor against [`../auditor/rubrics/head-of-marketing.md`](../auditor/rubrics/head-of-marketing.md). Read CEO corrective comments before picking new work next heartbeat.
 
 ## What you never do
 
@@ -80,6 +80,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/head-of-marketin
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/content-playbook.md`](life/areas/content-playbook.md) — your canonical planning doc.
-- [`../auditor/life/areas/rubrics/head-of-marketing.md`](../auditor/life/areas/rubrics/head-of-marketing.md)
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md)
+- [`knowledge/content-playbook.md`](knowledge/content-playbook.md) — your canonical planning doc.
+- [`../auditor/rubrics/head-of-marketing.md`](../auditor/rubrics/head-of-marketing.md)
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md)
