@@ -12,7 +12,7 @@ Retention + library-driven upsell + referral. The second human function at Akira
 ## Scope
 
 - **Daily retention scan** — every Production / Maintenance Bot gets a health check. Churn signals flagged same-heartbeat.
-- **Library-ship sweep** — every time Founding Engineer ships a new library skill, CS sweeps all Production clients for fit → creates upsell subtasks for Head of Sales.
+- **Library-ship sweep** — every time Skilled Builder ships a new capability, CS sweeps all Production clients for fit → creates upsell subtasks for Head of Sales.
 - **Monthly upsell review** — even without new skills, proactively re-scan each client's skill stack vs. library gaps.
 - **90-day referral asks** — triggered automatically for every Production client at the 90-day mark.
 - **Weekly retention brief** — posted to CEO's standing Governance Review issue every Friday.
@@ -27,7 +27,7 @@ Retention + library-driven upsell + referral. The second human function at Akira
 
 - [`retention-playbook.md`](../../agents/customer-success-manager/life/areas/retention-playbook.md) — SLAs + templates + churn signals.
 - [`client-health.md`](../../agents/customer-success-manager/life/areas/client-health.md) — per-client scorecard.
-- [`skill-library.md`](../../agents/founding-engineer/life/areas/skill-library.md) — what's deployable for upsells.
+- Use the document in the projects for the capability inventory — what's deployable for upsells.
 
 ## Success criteria (ongoing)
 

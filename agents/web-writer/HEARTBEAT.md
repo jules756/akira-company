@@ -63,7 +63,7 @@ For each valid brief:
    - Hook (50-75 words) — specific number or story.
    - AEO answer block (50-100 words, verbatim from brief or close).
    - Problem (200-300 words).
-   - Solution (400-600 words) — name Akira's library skills explicitly.
+   - Solution (400-600 words) — name Akira's capabilities explicitly.
    - How it works (200-300 words) — Vapi / Twilio / Cal.com / email-skill mentioned where relevant.
    - ROI section (if commercial intent).
    - CTA matching brief's `cta` field.
@@ -93,7 +93,7 @@ For each `Case study draft` subtask:
 4. **Draft case study** in the structure from AGENTS.md:
    - Client overview (anonymized if requested).
    - Problem before Akira.
-   - What we built (which library skills).
+   - What we built (which capabilities).
    - Result with numbers.
    - Lesson for similar operators.
 5. **Submit** to SEO + AEO Specialist for review, who forwards to Web Operations for publish at `/case-studies/<slug>`.

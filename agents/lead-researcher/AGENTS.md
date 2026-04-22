@@ -111,7 +111,7 @@ Body (YAML):
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/lead-researcher.md`](../auditor/life/areas/rubrics/lead-researcher.md). Read CEO corrective comments before next heartbeat.
+Scored daily by Auditor against the document in the projects. Read CEO corrective comments before next heartbeat.
 
 ## What you never do
 
@@ -127,6 +127,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/lead-researcher.
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/icp-playbook.md`](life/areas/icp-playbook.md) — ICP definition + search templates.
-- [`../auditor/life/areas/rubrics/lead-researcher.md`](../auditor/life/areas/rubrics/lead-researcher.md)
-- [`../head-of-sales/life/areas/notion-protocol.md`](../head-of-sales/life/areas/notion-protocol.md) — for the promotion model (you read but never write).
+- Use the document in the projects — ICP definition + search templates.
+- Use the document in the projects
+- Use the document in the projects — for the promotion model (you read but never write).

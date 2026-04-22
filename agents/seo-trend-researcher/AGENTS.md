@@ -102,7 +102,7 @@ Body (YAML):
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/seo-trend-researcher.md`](../auditor/life/areas/rubrics/seo-trend-researcher.md).
+Scored daily by Auditor against the document in the projects.
 
 ## What you never do
 
@@ -119,4 +119,4 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/seo-trend-resear
 - [`life/areas/trend-log.md`](life/areas/trend-log.md) — append-only daily scan log.
 - [`life/areas/source-list.md`](life/areas/source-list.md) — what to scan.
 - [`../seo-aeo-specialist/life/areas/seo-playbook.md`](../seo-aeo-specialist/life/areas/seo-playbook.md) — playbook you co-maintain.
-- [`../auditor/life/areas/rubrics/seo-trend-researcher.md`](../auditor/life/areas/rubrics/seo-trend-researcher.md)
+- Use the document in the projects for your rubric.

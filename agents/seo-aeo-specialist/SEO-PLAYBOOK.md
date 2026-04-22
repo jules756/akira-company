@@ -1,0 +1,3 @@
+# SEO-PLAYBOOK (Flattened)
+
+Top queries, ranking changes, coverage errors...

@@ -78,7 +78,7 @@ When Customer Success Manager (CS) flags a Production client at the 30-day mark 
 5. **Structure**:
    - Client overview (anonymized if needed) — 100 words.
    - The problem before Akira — 150 words.
-   - What we built (which library skills, deployed how) — 200 words.
+   - What we built (which capabilities, deployed how) — 200 words.
    - The result with hard numbers — 200 words.
    - The lesson for similar Nordic-hospitality operators — 100 words.
    - Total: 800–1000 words. Stronger if shorter and more specific.

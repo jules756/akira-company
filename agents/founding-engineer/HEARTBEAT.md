@@ -97,17 +97,17 @@ Use `ship` skill. Checklist:
 - Deploy to target environment (Vercel preview → prod / Supabase migration).
 - Smoke test in prod.
 - Comment the shipped status on the origin issue; reassign to requester with `status=done`.
-- **If the merge promotes a library skill to `production`:** update [`life/areas/skill-library.md`](life/areas/skill-library.md) (change state, add deploy pattern, add price / languages / limits) AND notify Customer Success Manager via a comment on the CEO "Engineering Retro" issue tagging them: `New library skill live: <slug>. Trigger upsell sweep.` This is how the library compounds into revenue.
+- **If the merge promotes a capability to `production`:** update the document in the projects (change state, add deploy pattern, add price / languages / limits) AND notify Customer Success Manager: `New capability live: <slug>. Trigger upsell sweep.` This is how the library compounds into revenue.
 
 ## 9a. Library maintenance mode
 
-When Implementation Engineer or Customer Success surfaces an issue with an existing library skill (accent handling, integration drift, performance regression), schedule the fix:
+When Implementation Engineer or Customer Success surfaces an issue with an existing capability (accent handling, integration drift, performance regression), schedule the fix:
 
-1. Log the issue in `skill-library.md` "Maintenance + optimization log" with date, reporter, symptom.
+1. Log the issue in the capability library document "Maintenance + optimization log" with date, reporter, symptom.
 2. Treat the fix as a first-class feature (TDD, `verification-before-completion`, CTO review).
 3. After shipping, append fix + date to the same log row. Notify the reporter.
 
-Don't let library skills rot. The whole moat depends on the library staying reliable across every client it's deployed to.
+Don't let capabilities rot. The whole moat depends on the library staying reliable across every client it's deployed to.
 
 ## 10. Magnet backend builds (rare — Web Operations escalates only)
 

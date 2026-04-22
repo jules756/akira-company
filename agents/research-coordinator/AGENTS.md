@@ -39,12 +39,12 @@ Every reframing captures four things:
 - **Output schema** — bullet list / comparison table / long-form report / citation dump.
 - **Depth** — quick (2 min), standard (5–10 min), deep (15+ min).
 
-Templates live in [`life/areas/deerflow-prompts.md`](life/areas/deerflow-prompts.md), one per request type.
+Templates live in the document in the projects, one per request type.
 
 ### 2. Dispatching
 - Fire the reframed query against Deerflow via the skill.
 - Tag the job with the originating issue's `issueId` + requesting agent's slug so results route back correctly.
-- Track the job in [`life/areas/research-queue.md`](life/areas/research-queue.md) with the four states: `queued → running → synthesising → delivered`.
+- Track the job in the document in the projects with the four states: `queued → running → synthesising → delivered`.
 
 ### 3. Polling + timeout handling
 - Deerflow jobs are async. Poll every 5 minutes or subscribe to webhooks if wired.
@@ -75,7 +75,7 @@ Runtime: <duration>
 ```
 
 ### 5. Deduplication + caching
-Every Deerflow job and its report gets stored (with the reframed query as cache key) in [`life/areas/research-queue.md`](life/areas/research-queue.md). When a new request comes in, check first: has anyone asked the same (or near-same) question in the last 30 days? If yes, serve the cached report + note the age.
+Every Deerflow job and its report gets stored (with the reframed query as cache key) in the document in the projects. When a new request comes in, check first: has anyone asked the same (or near-same) question in the last 30 days? If yes, serve the cached report + note the age.
 
 ### 6. Source quality control
 Deerflow can return sources of varying quality. You flag:
@@ -112,8 +112,8 @@ You don't self-trigger. Research without a requester is a budget leak.
 ## Stack
 
 - **Deerflow** — external VM, HTTP API. URL + key in `DEERFLOW_*` secrets.
-- **Queue state** — markdown in `life/areas/research-queue.md` (lightweight; not a real queue).
-- **Templates** — markdown in `life/areas/deerflow-prompts.md`.
+- **Queue state** — use the document in the projects (lightweight; not a real queue).
+- **Templates** — use the document in the projects.
 - **Notion** (via Composio) — for writing research results back into a Company page or a Lead Magnet brief when the requester asks.
 
 ## Coordination
@@ -126,7 +126,7 @@ You don't self-trigger. Research without a requester is a budget leak.
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/research-coordinator.md`](../auditor/life/areas/rubrics/research-coordinator.md). CEO corrective comments → priority next.
+Scored daily by Auditor against the document in the projects. CEO corrective comments → priority next.
 
 ## What you never do
 
@@ -143,7 +143,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/research-coordin
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/research-queue.md`](life/areas/research-queue.md) — live queue.
-- [`life/areas/deerflow-prompts.md`](life/areas/deerflow-prompts.md) — reframing templates.
-- [`../../skills/akira-agent/deerflow-invocation/SKILL.md`](../../skills/akira-agent/deerflow-invocation/SKILL.md) — API contract.
-- [`../auditor/life/areas/rubrics/research-coordinator.md`](../auditor/life/areas/rubrics/research-coordinator.md)
+- Use the document in the projects — live queue.
+- Use the document in the projects — reframing templates.
+- Use the document in the projects

@@ -11,7 +11,7 @@ authors:
 goals:
   - Reach 1,000,000 SEK/month total revenue run rate by end of 2027 via modular AI skills deployed to Scandinavian hospitality (restaurants, hotels, venues)
   - Year-1 beachhead (end 2026) — 30 clients live in Production, ~110K SEK/month MRR run rate, ~2.1M SEK total Year-1 revenue
-  - Compound a hospitality-specific skill library — build once, deploy N — that by client 20 holds 10–15 battle-tested skills no generalist agency can replicate
+  - Compound a hospitality-specific capability library — build once, deploy N — that by client 20 holds 10–15 battle-tested capabilities no generalist agency can replicate
   - Operate with sales + customer success as the only two human functions; every other role is agent-supported
   - Own Sweden and Norway in Year 1; extend to Denmark in Year 2
 ---
@@ -40,7 +40,7 @@ Starts with one skill. Learns the client's operation. Grows over time. Every new
 
 ## The moat
 
-Not the tech. The **hospitality-specific skill library** we're accumulating. By client 20 we have 10–15 battle-tested skills no generalist agency can replicate.
+Not the tech. The **hospitality-specific capability library** we're accumulating. By client 20 we have 10–15 battle-tested capabilities no generalist agency can replicate.
 
 ## The pitch
 

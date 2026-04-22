@@ -111,7 +111,7 @@ Body (YAML):
 
 ## Reading the HR loop
 
-Scored weekly by Auditor against [`../auditor/life/areas/rubrics/lead-magnet-creator.md`](../auditor/life/areas/rubrics/lead-magnet-creator.md). Read CEO corrective comments before picking work.
+Scored weekly by Auditor against the document in the projects. Read CEO corrective comments before picking work.
 
 ## What you never do
 
@@ -126,7 +126,7 @@ Scored weekly by Auditor against [`../auditor/life/areas/rubrics/lead-magnet-cre
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/magnet-pipeline.md`](life/areas/magnet-pipeline.md) — ranked ideas.
-- [`life/areas/magnet-library.md`](life/areas/magnet-library.md) — shipped + killed.
-- [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) — team direction.
-- [`../auditor/life/areas/rubrics/lead-magnet-creator.md`](../auditor/life/areas/rubrics/lead-magnet-creator.md)
+- Use the document in the projects — ranked ideas.
+- Use the document in the projects — shipped + killed.
+- Use the document in the projects — team direction.
+- Use the document in the projects

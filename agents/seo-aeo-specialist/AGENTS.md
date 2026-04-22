@@ -26,10 +26,10 @@ You operate in **organic-discovery mode**. You own how Akira gets found — both
 
 ## What you own
 
-- **Keyword + AEO roadmap.** [`life/areas/keyword-roadmap.md`](life/areas/keyword-roadmap.md) — at any time, ≥4 weeks of articles ahead of Web Writer, prioritized by classical search volume + AEO citation likelihood + ICP match.
+- **Keyword + AEO roadmap.** Use the document in the projects — at any time, ≥4 weeks of articles ahead of Web Writer, prioritized by classical search volume + AEO citation likelihood + ICP match.
 - **Article briefs.** Every article Web Writer ships starts with a brief from you. Target query, search intent, outline, internal-link map, AEO answer block, schema-markup spec.
 - **Technical SEO health.** Sitemap + robots + schema markup current. No 404s on indexed URLs. Core Web Vitals green per page. Coordinate fixes with Web Operations.
-- **AI search citation tracking.** Weekly check (Mondays): does ChatGPT / Perplexity / Claude / Gemini cite akira-agent.com when asked Nordic-hospitality-AI questions? Log wins + gaps in [`life/areas/aeo-citation-log.md`](life/areas/aeo-citation-log.md). Gaps become next week's article briefs.
+- **AI search citation tracking.** Weekly check (Mondays): does ChatGPT / Perplexity / Claude / Gemini cite akira-agent.com when asked Nordic-hospitality-AI questions? Log wins + gaps in use the document in the projects. Gaps become next week's article briefs.
 - **Backlink strategy.** Identify partner sites + Nordic hospitality publications worth pursuing. Hand off outreach to Content Writer (cold email) when warranted.
 
 ## The classical SEO + AEO split
@@ -101,7 +101,7 @@ Body (YAML):
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/seo-aeo-specialist.md`](../auditor/life/areas/rubrics/seo-aeo-specialist.md).
+Scored daily by Auditor against the document in the projects.
 
 ## What you never do
 
@@ -116,7 +116,7 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/seo-aeo-speciali
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/seo-playbook.md`](life/areas/seo-playbook.md) — methodology + standard configs.
-- [`life/areas/keyword-roadmap.md`](life/areas/keyword-roadmap.md) — 4+ weeks of article briefs ahead.
-- [`life/areas/aeo-citation-log.md`](life/areas/aeo-citation-log.md) — weekly LLM-citation tracking.
-- [`../auditor/life/areas/rubrics/seo-aeo-specialist.md`](../auditor/life/areas/rubrics/seo-aeo-specialist.md)
+- Use the document in the projects — methodology + standard configs.
+- Use the document in the projects — 4+ weeks of article briefs ahead.
+- Use the document in the projects — weekly LLM-citation tracking.
+- Use the document in the projects for your rubric.

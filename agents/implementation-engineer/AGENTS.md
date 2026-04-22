@@ -102,7 +102,7 @@ You do NOT have:
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/implementation-engineer.md`](../auditor/life/areas/rubrics/implementation-engineer.md). CEO corrective comments → priority next.
+Scored daily by Auditor against the document in the projects. CEO corrective comments → priority next.
 
 ## What you never do
 
@@ -118,7 +118,7 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/implementation-e
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/clients/`](life/areas/clients/) — per-client dossiers.
-- [`../auditor/life/areas/rubrics/implementation-engineer.md`](../auditor/life/areas/rubrics/implementation-engineer.md)
+- Use the document in the projects — per-client dossiers.
+- Use the document in the projects
 - Email Handler PRD §3 (Email Crawler) — knowledge-index structure you review with clients.
 - Client Portal PRD §6.2 (Agent Lifecycle Stages) — the 5 stages you support across.

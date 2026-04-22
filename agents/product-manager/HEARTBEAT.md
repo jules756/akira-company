@@ -53,11 +53,11 @@ Typical types:
      - Tech Stack Tags: initial guess from Proposal scope.
      - Proposal: link the Proposal page.
      - MRR: from Proposal's Proposed MRR rollup.
-   - **4b. Read the skill library.** Open [`../founding-engineer/life/areas/skill-library.md`](../founding-engineer/life/areas/skill-library.md). Know what's `production`, `beta`, `planned`.
+   - **4b. Read the capability library.** Check the document in the projects. Know what's `production`, `beta`, `planned`.
    - **4c. Audit the Proposal against the library.** For each capability the client needs, classify:
      - `Library: full` → existing skill deploys as-is.
      - `Library: partial` → existing skill needs extension.
-     - `Library: none` → net-new library skill required.
+     - `Library: none` → net-new capability required.
      - `Out of scope` → not an Akira deliverable; flag to Head of Sales.
    - **4d. Append a `Skill fit audit` section to the Bot page body** with the per-capability classification. This is the decision record.
    - **4e. Route work based on the audit:**
@@ -65,7 +65,7 @@ Typical types:
      - For `Library: partial` or `Library: none` → create a subtask for CTO: `Plan: <extension / new skill> for <Client>` with the specific gap from the audit. CTO decides whether to extend or build new.
      - For `Out of scope` → create a subtask for Head of Sales to resolve with the client.
    - **4f. Create a subtask for yourself:** `Orchestrate: <Client> Bot delivery` — your own coordination track.
-   - **4g. Append to skill-library.md's "Skill requests (incoming)" table** any `partial` / `none` classifications so Founding Engineer + CTO see the aggregate demand.
+   - **4g. Append to the capability library document's "Capability requests (incoming)" table** any `partial` / `none` classifications so Skilled Builder + CTO see the aggregate demand.
 
 ## 6. Status-transition work
 

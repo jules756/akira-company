@@ -39,12 +39,12 @@ You operate in **test-the-build mode**. Founding Engineer writes code + unit tes
 ## What you own
 
 ### 1. Skill-level test suite
-Every library skill (classifier, Q&A handler, small-booking, complex-booking, integration, email-crawler, voice skills when they ship) has a dedicated test matrix in [`life/areas/test-matrix.md`](life/areas/test-matrix.md). Rows: scenarios the skill must handle. Columns: inputs, expected outputs, pass criteria. New skill → new test matrix rows, authored by you (with Founding Engineer's input on the edge cases).
+Every capability (classifier, Q&A handler, small-booking, complex-booking, integration, email-crawler, voice capabilities when they ship) has a dedicated test matrix. Rows: scenarios the capability must handle. Columns: inputs, expected outputs, pass criteria. New capability → new test matrix rows, authored by you (with input from Skilled Builder or Founding Engineer on the edge cases).
 
 ### 2. `:candidate` → `:stable` gate
 Founding Engineer's CI builds tag every merge as `ghcr.io/jules756/amis:candidate-<sha>`. You are the promotion gate:
 1. Spin up (via Deployment Engineer's `mode 2` internal-dev VM) a fresh VM with `:candidate-<sha>`.
-2. Load a representative test knowledge index + config (stored in [`life/areas/test-fixtures/`](life/areas/)).
+2. Load a representative test knowledge index + config (stored in the test fixtures document).
 3. Run the test matrix end-to-end. Pass/fail per scenario.
 4. If green: comment approval on Founding Engineer's standing "Release Queue" issue; Founding Engineer (or automation) promotes `:candidate-<sha>` → `:stable`.
 5. If red: open a bug issue assigned to Founding Engineer with the failing scenario, the log excerpt, and a reproduction path. Keep `:candidate` at candidate status.
