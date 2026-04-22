@@ -27,7 +27,7 @@ Handle `PAPERCLIP_APPROVAL_ID` if set (rarely relevant — approvals flow to CEO
 
 ## 3. HR loop
 
-Scan latest Auditor scores against [`../auditor/life/areas/rubrics/research-coordinator.md`](../auditor/life/areas/rubrics/research-coordinator.md). CEO corrective comments → address this heartbeat.
+Scan latest Auditor scores against [`../auditor/rubrics/research-coordinator.md`](../auditor/rubrics/research-coordinator.md). CEO corrective comments → address this heartbeat.
 
 ## 4. Assignments + queue sweep
 

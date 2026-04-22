@@ -22,11 +22,11 @@ Read wake vars. Note weekday.
 
 ## 2. Read state
 
-- [`life/areas/seo-playbook.md`](life/areas/seo-playbook.md) — methodology.
-- [`life/areas/keyword-roadmap.md`](life/areas/keyword-roadmap.md) — current 4+ weeks of briefs.
-- [`life/areas/aeo-citation-log.md`](life/areas/aeo-citation-log.md) — last week's findings.
-- [`../head-of-marketing/life/areas/demand-creation-playbook.md`](../head-of-marketing/life/areas/demand-creation-playbook.md) — meta direction.
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md).
+- [`knowledge/seo-playbook.md`](knowledge/seo-playbook.md) — methodology.
+- [`knowledge/keyword-roadmap.md`](knowledge/keyword-roadmap.md) — current 4+ weeks of briefs.
+- [`knowledge/aeo-citation-log.md`](knowledge/aeo-citation-log.md) — last week's findings.
+- [`../head-of-marketing/knowledge/demand-creation-playbook.md`](../head-of-marketing/knowledge/demand-creation-playbook.md) — meta direction.
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md).
 
 ## 3. Approvals + HR loop
 

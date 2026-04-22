@@ -21,9 +21,9 @@ GET /api/agents/me
 
 ## 2. Read state
 
-- [`life/areas/editorial-calendar.md`](life/areas/editorial-calendar.md) — what's shipped + queued.
-- [`../seo-aeo-specialist/life/areas/seo-playbook.md`](../seo-aeo-specialist/life/areas/seo-playbook.md) — article shape + brand rules.
-- [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) — brand voice direction.
+- [`knowledge/editorial-calendar.md`](knowledge/editorial-calendar.md) — what's shipped + queued.
+- [`../seo-aeo-specialist/knowledge/seo-playbook.md`](../seo-aeo-specialist/knowledge/seo-playbook.md) — article shape + brand rules.
+- [`../head-of-marketing/knowledge/content-playbook.md`](../head-of-marketing/knowledge/content-playbook.md) — brand voice direction.
 
 ## 3. Approvals + HR loop
 
