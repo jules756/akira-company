@@ -72,7 +72,7 @@ For each request:
    - `enrich-field` → patch the single field on the Company page.
    - `append-page-body` → append a new H2-level section to the Company page body with the provided title and markdown. Always append, never replace. Prepend a timestamp to the section: `## <section_title> — YYYY-MM-DD`.
 4. **Reply.** Comment on the subtask with the resulting Notion page URL and mark `status=done`. If rejected, comment the reason and mark `status=blocked`.
-5. **Audit.** Append to `life/areas/write-requests-log.md`:
+5. **Audit.** Append to `knowledge/write-requests-log.md`:
    ```
    YYYY-MM-DD HH:MM — <requester> — <type> — <notion-url> — <executed|rejected: reason>
    ```
@@ -85,7 +85,7 @@ Skip if wake reason is `mention` and no schedule has fired since last hygiene ru
 
 ### 5a. Schema snapshot
 
-Fetch both database schemas via Composio. Write to `life/areas/crm-schema.md` with today's date. Structure:
+Fetch both database schemas via Composio. Write to `knowledge/crm-schema.md` with today's date. Structure:
 
 ```markdown
 # Notion CRM Schema — snapshot YYYY-MM-DD HH:MM
@@ -105,7 +105,7 @@ Fetch both database schemas via Composio. Write to `life/areas/crm-schema.md` wi
 
 ### 5b. Schema drift detection
 
-Diff today's snapshot against yesterday's (`life/areas/crm-schema-history.md`). On change:
+Diff today's snapshot against yesterday's (`knowledge/crm-schema-history.md`). On change:
 
 1. Append old snapshot to `crm-schema-history.md` with timestamp.
 2. Post `SCHEMA CHANGE — YYYY-MM-DD` comment on "CRM Daily" with the diff (added / removed / renamed / option changes).
