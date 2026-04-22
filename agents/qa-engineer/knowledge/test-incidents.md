@@ -1,6 +1,6 @@
 # Test Incidents
 
-Append-only log of every bug QA caught (or missed). Sibling of Deployment Engineer's [`deploy-incidents.md`](../../deployment-engineer/life/areas/deploy-incidents.md) — different scope: this tracks code-level regressions; that one tracks infrastructure.
+Append-only log of every bug QA caught (or missed). Sibling of Deployment Engineer's [`knowledge/deploy-incidents.md`](../../deployment-engineer/knowledge/deploy-incidents.md) — different scope: this tracks code-level regressions; that one tracks infrastructure.
 
 ## Format
 

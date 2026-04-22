@@ -53,7 +53,7 @@ Founding Engineer's CI builds tag every merge as `ghcr.io/jules756/amis:candidat
 When Deployment Engineer comments "rollout complete" on a new `:stable` version:
 1. Pick one representative VM per client profile (restaurant / hotel / small / multi-location).
 2. Run a lightweight smoke suite: send a representative test email with a sentinel header, verify the classifier + handler respond correctly within 5 minutes.
-3. If any profile fails: comment on Deployment Engineer's "Rollout Queue" → trigger rollback. Write up the regression in [`life/areas/test-incidents.md`](life/areas/test-incidents.md).
+3. If any profile fails: comment on Deployment Engineer's "Rollout Queue" → trigger rollback. Write up the regression in [`knowledge/test-incidents.md`](knowledge/test-incidents.md).
 4. Nightly cron runs the same suite against every `env=prod` VM — you catch drift even without a rollout trigger.
 
 ### 4. Bug-reproduction tests (from live clients)
@@ -61,10 +61,9 @@ When Implementation Engineer reports a live-client bug:
 1. Reproduce the bug on a `mode 2` internal-dev VM from the same `:stable` version the affected client is on.
 2. Write a failing test that captures the bug. Commit it to the test matrix.
 3. Hand the failing test + repro steps to Founding Engineer. They fix in a new `:candidate`; you re-run to confirm green before it becomes `:stable`.
-4. Log to [`life/areas/test-incidents.md`](life/areas/test-incidents.md): client, bug, repro, root cause once known, test added.
+4. Log to [`knowledge/test-incidents.md`](knowledge/test-incidents.md): client, bug, repro, root cause once known, test added.
 
-### 5. Test fixtures + synthetic data
-You maintain `life/areas/test-fixtures/`:
+You maintain `knowledge/test-fixtures/`:
 - Representative knowledge-index files (synthetic restaurant + hotel personas).
 - Configs covering the spectrum: active / inactive seasons, tight / wide booking thresholds, single / multi-language.
 - Sample incoming emails per classifier category (Q&A, small booking, complex booking, complaint).

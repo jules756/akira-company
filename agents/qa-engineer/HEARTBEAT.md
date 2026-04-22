@@ -74,7 +74,7 @@ When Founding Engineer tags a new `:candidate-<sha>` on the "Release Queue" issu
 
 When Deployment Engineer comments "rollout complete" on the Rollout Queue:
 
-1. Pull the list of live client VMs from [`../deployment-engineer/life/areas/fleet.md`](../deployment-engineer/life/areas/fleet.md).
+1. Pull the list of live client VMs from [`../deployment-engineer/knowledge/fleet.md`](../deployment-engineer/knowledge/fleet.md).
 2. Pick one VM per client profile (or all if fleet < 10).
 3. For each picked VM: send a sentinel test email to the client's monitored inbox with subject `[akira-fleet-smoke-<date>]`.
 4. Wait 10 minutes. Query each client's Supabase logs for the sentinel email's classifier entry. Expect the classifier to have processed it.
@@ -108,8 +108,8 @@ Once daily (typically 03:00 CET during low-traffic window):
 ## 9. Test matrix extension (pairing with Founding Engineer)
 
 When Founding Engineer is building a new skill or scenario:
-1. Read the spec (usually in their `life/areas/` notes or a CTO-issued plan).
-2. Propose scenarios to cover in [`life/areas/test-matrix.md`](life/areas/test-matrix.md). Comment on the build task.
+1. Read the spec (usually in their `knowledge/` notes or a CTO-issued plan).
+2. Propose scenarios to cover in [`knowledge/test-matrix.md`](knowledge/test-matrix.md). Comment on the build task.
 3. Author the integration tests alongside the skill work — tests go into the Amis repo's `tests/e2e/` directory.
 4. The skill is not considered ready for `:candidate` until the matrix rows are green on a dev VM.
 
