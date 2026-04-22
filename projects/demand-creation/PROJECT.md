@@ -28,10 +28,10 @@ Every marketing issue lives here:
 
 ## References
 
-- [`demand-creation-playbook.md`](../../agents/head-of-marketing/life/areas/demand-creation-playbook.md) — the framework.
-- [`content-playbook.md`](../../agents/head-of-marketing/life/areas/content-playbook.md) — weekly cadence + rules.
-- [`engagement-log.md`](../../agents/linkedin-engagement/life/areas/engagement-log.md) — demand-creation capture layer.
-- [`dm-prompts.md`](../../agents/linkedin-engagement/life/areas/dm-prompts.md) — Cold-to-Cash two-prompt system.
+- [`demand-creation-playbook.md`](../../agents/head-of-marketing/knowledge/demand-creation-playbook.md) — the framework.
+- [`content-playbook.md`](../../agents/head-of-marketing/knowledge/content-playbook.md) — weekly cadence + rules.
+- [`engagement-log.md`](../../agents/linkedin-engagement/knowledge/engagement-log.md) — demand-creation capture layer.
+- [`dm-prompts.md`](../../agents/linkedin-engagement/knowledge/dm-prompts.md) — Cold-to-Cash two-prompt system.
 
 ## Success criteria (ongoing — this project runs forever)
 

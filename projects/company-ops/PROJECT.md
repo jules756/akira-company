@@ -26,10 +26,10 @@ The CEO + Auditor layer. Governance, weekly audit-log review, engineering retros
 
 ## References
 
-- [`governance.md`](../../agents/ceo/life/areas/governance.md) — phase model + approval-gate matrix + audit cadence + budgets.
-- [`founder-role.md`](../../agents/ceo/life/areas/founder-role.md) — what Jules does vs. what the org does.
-- [`company-goal.md`](../../agents/ceo/life/areas/company-goal.md) — the North Star.
-- All rubrics under [`agents/auditor/life/areas/rubrics/`](../../agents/auditor/life/areas/rubrics/).
+- [`governance.md`](../../agents/ceo/knowledge/governance.md) — phase model + approval-gate matrix + audit cadence + budgets.
+- [`founder-role.md`](../../agents/ceo/knowledge/founder-role.md) — what Jules does vs. what the org does.
+- [`company-goal.md`](../../agents/ceo/knowledge/company-goal.md) — the North Star.
+- All rubrics under [`agents/auditor/rubrics/`](../../agents/auditor/rubrics/).
 
 ## Success criteria (ongoing)
 

@@ -29,10 +29,10 @@ Sales team's conversion engine. Everything between "a prospect enters Notion CRM
 
 ## References
 
-- [`notion-protocol.md`](../../agents/head-of-sales/life/areas/notion-protocol.md) — CRM rules.
-- [`icp-playbook.md`](../../agents/lead-researcher/life/areas/icp-playbook.md) — ICP + sourcing.
-- [`follow-up-patterns.md`](../../agents/follow-up-manager/life/areas/follow-up-patterns.md) — learned cadence rules.
-- [`pre-call-brief-template.md`](../../agents/follow-up-manager/life/areas/pre-call-brief-template.md) — brief generation at booking time.
+- [`notion-protocol.md`](../../agents/head-of-sales/knowledge/notion-protocol.md) — CRM rules.
+- [`icp-playbook.md`](../../agents/lead-researcher/knowledge/icp-playbook.md) — ICP + sourcing.
+- [`follow-up-patterns.md`](../../agents/follow-up-manager/knowledge/follow-up-patterns.md) — learned cadence rules.
+- [`pre-call-brief-template.md`](../../agents/follow-up-manager/knowledge/pre-call-brief-template.md) — brief generation at booking time.
 
 ## Success criteria (ongoing)
 

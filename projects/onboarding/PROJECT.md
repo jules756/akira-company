@@ -7,7 +7,7 @@ color: "#6366f1"
 
 # Onboarding
 
-The bootstrap phase. Closes when the company is in Governance **Phase 2 (Selective Trust)** per [`governance.md`](../../agents/ceo/life/areas/governance.md).
+The bootstrap phase. Closes when the company is in Governance **Phase 2 (Selective Trust)** per [`governance.md`](../../agents/ceo/knowledge/governance.md).
 
 ## Scope
 
