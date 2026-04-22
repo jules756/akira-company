@@ -32,10 +32,10 @@ Coordinates with SEO + AEO Specialist + SEO Trend Researcher (briefs, schema spe
 
 ## References
 
-- [`editorial-calendar.md`](../../agents/web-writer/life/areas/editorial-calendar.md)
-- [`web-design-system.md`](../../agents/web-designer/life/areas/web-design-system.md)
-- [`deployment-playbook.md`](../../agents/web-operations/life/areas/deployment-playbook.md)
-- [`analytics-tracking-spec.md`](../../agents/web-operations/life/areas/analytics-tracking-spec.md)
+- [`editorial-calendar.md`](../../agents/web-writer/knowledge/editorial-calendar.md)
+- [`web-design-system.md`](../../agents/web-designer/knowledge/web-design-system.md)
+- [`deployment-playbook.md`](../../agents/web-operations/knowledge/deployment-playbook.md)
+- [`analytics-tracking-spec.md`](../../agents/web-operations/knowledge/analytics-tracking-spec.md)
 
 ## Routines feeding this project
 

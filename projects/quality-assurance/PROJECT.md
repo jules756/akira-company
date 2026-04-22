@@ -40,8 +40,8 @@ Every Amis release passes through this project. QA Engineer gates the `:candidat
 
 ## References
 
-- [`test-matrix.md`](../../agents/qa-engineer/life/areas/test-matrix.md) — scenarios × skills.
-- [`test-incidents.md`](../../agents/qa-engineer/life/areas/test-incidents.md) — append-only log + miss log.
+- [`test-matrix.md`](../../agents/qa-engineer/knowledge/test-matrix.md) — scenarios × skills.
+- [`test-incidents.md`](../../agents/qa-engineer/knowledge/test-incidents.md) — append-only log + miss log.
 
 ## Success criteria (ongoing)
 

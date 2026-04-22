@@ -41,8 +41,8 @@ Coordinates with Founding Engineer (tag handoffs), CSM (churn trigger), Implemen
 
 ## References
 
-- [`fleet.md`](../../agents/deployment-engineer/life/areas/fleet.md) — live client + dev VM roster.
-- [`deploy-incidents.md`](../../agents/deployment-engineer/life/areas/deploy-incidents.md) — append-only incident log.
+- [`fleet.md`](../../agents/deployment-engineer/knowledge/fleet.md) — live client + dev VM roster.
+- [`deploy-incidents.md`](../../agents/deployment-engineer/knowledge/deploy-incidents.md) — append-only incident log.
 - [`vm-provisioning`](../../skills/akira-agent/vm-provisioning/SKILL.md) — Hetzner API SOP.
 - [`client-onboarding-runbook`](../../skills/akira-agent/client-onboarding-runbook/SKILL.md) — 7-step onboarding.
 

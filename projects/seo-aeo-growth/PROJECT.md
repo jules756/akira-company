@@ -28,11 +28,11 @@ Both report to Head of Marketing. Coordinate with Web Writer (articles), Web Ope
 
 ## References
 
-- [`seo-playbook.md`](../../agents/seo-aeo-specialist/life/areas/seo-playbook.md)
-- [`keyword-roadmap.md`](../../agents/seo-aeo-specialist/life/areas/keyword-roadmap.md)
-- [`aeo-citation-log.md`](../../agents/seo-aeo-specialist/life/areas/aeo-citation-log.md)
-- [`trend-log.md`](../../agents/seo-trend-researcher/life/areas/trend-log.md)
-- [`source-list.md`](../../agents/seo-trend-researcher/life/areas/source-list.md)
+- [`seo-playbook.md`](../../agents/seo-aeo-specialist/knowledge/seo-playbook.md)
+- [`keyword-roadmap.md`](../../agents/seo-aeo-specialist/knowledge/keyword-roadmap.md)
+- [`aeo-citation-log.md`](../../agents/seo-aeo-specialist/knowledge/aeo-citation-log.md)
+- [`trend-log.md`](../../agents/seo-trend-researcher/knowledge/trend-log.md)
+- [`source-list.md`](../../agents/seo-trend-researcher/knowledge/source-list.md)
 
 ## Routines feeding this project
 
