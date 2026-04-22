@@ -23,7 +23,7 @@ Read wake vars.
 
 ## 2. Read the rules
 
-- [`life/areas/icp-playbook.md`](life/areas/icp-playbook.md) — ICP definition + search templates + volume targets.
+- [`knowledge/icp-playbook.md`](knowledge/icp-playbook.md) — ICP definition + search templates + volume targets.
 - [`../head-of-sales/life/areas/notion-protocol.md`](../head-of-sales/life/areas/notion-protocol.md) — you're read-only on Notion.
 - `../crm-steward/life/areas/crm-schema.md` — for the CRM DB schema when checking duplicates.
 
@@ -50,7 +50,7 @@ If no specific assignment but it's a weekday → run the daily sourcing routine 
 
 ### 5a. Engagement sourcing (primary — always run first)
 
-1. Read [`../linkedin-engagement/life/areas/engagement-log.md`](../linkedin-engagement/life/areas/engagement-log.md). Pull all entries with Tier 1 or Tier 2 from the last 24h.
+1. Read [`../linkedin-engagement/knowledge/engagement-log.md`](../linkedin-engagement/knowledge/engagement-log.md). Pull all entries with Tier 1 or Tier 2 from the last 24h.
 2. **Apply exclusion filters** (see [`../head-of-marketing/life/areas/demand-creation-playbook.md`](../head-of-marketing/life/areas/demand-creation-playbook.md) "Exclusion filters"): skip if already in CRM, already in the sheet with First-Touch Date set, competitor, sub-ICP, `Not interested` in last 180 days, or on Head of Marketing's exclusion list.
 3. For each non-excluded engager not already in the sheet AND not already in the Notion CRM:
    - Enrich via Composio (LinkedIn → company → website → Nordic match → Restaurant Type if applicable). Use Apollo/Clay-style data as a ranker at this stage, not a trigger (trigger was the engagement).

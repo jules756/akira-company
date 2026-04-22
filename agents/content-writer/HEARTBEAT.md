@@ -22,8 +22,8 @@ Read wake vars.
 
 ## 2. Read the rules
 
-- [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) — pillars, language rules, standing directives.
-- `life/areas/templates/` — your library of patterns that worked.
+- [`../head-of-marketing/knowledge/content-playbook.md`](../head-of-marketing/knowledge/content-playbook.md) — pillars, language rules, standing directives.
+- `knowledge/templates/` — your library of patterns that worked.
 
 ## 3. Approvals
 

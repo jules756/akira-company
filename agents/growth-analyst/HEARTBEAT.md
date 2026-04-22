@@ -24,7 +24,7 @@ Check wake vars. If mid-week mention, go to step 7 (QUERY RESPONSE mode). If Fri
 
 ## 2. Read the schema
 
-[`../crm-steward/life/areas/crm-schema.md`](../crm-steward/life/areas/crm-schema.md). Note current stage names and field names. All queries use the live schema, not hardcoded strings.
+[`../crm-steward/knowledge/crm-schema.md`](../crm-steward/knowledge/crm-schema.md). Note current stage names and field names. All queries use the live schema, not hardcoded strings.
 
 ## 3. Pull the data
 
