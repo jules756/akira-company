@@ -21,8 +21,8 @@ GET /api/agents/me
 
 ## 2. Read context
 
-- Read the CTO decision trail (`../cto/life/areas/decisions/`) for architectural direction.
-- Check `life/areas/` for your own in-progress notes.
+- Read the CTO decision trail (`../cto/knowledge/decisions/`) for architectural direction.
+- Check `knowledge/` for your own in-progress notes.
 
 ## 3. Approvals
 
@@ -85,7 +85,7 @@ When a bug / incident arrives:
    - Run the test.
    - If hypothesis confirmed → fix the root cause, not the symptom.
    - If refuted → new hypothesis. Repeat.
-2. Log the session in `life/areas/bug-log.md` with: reproduction, root cause, fix, tests added.
+2. Log the session in `knowledge/bug-log.md` with: reproduction, root cause, fix, tests added.
 3. If the bug pattern could repeat elsewhere, add a check to `verification-before-completion` for future work.
 
 ## 9. Ship mode (when a merge is approved)

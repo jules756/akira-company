@@ -32,7 +32,7 @@ Handle `PAPERCLIP_APPROVAL_ID` if set.
 
 ## 4. HR loop
 
-Scan CEO corrective comments citing [`../auditor/life/areas/rubrics/implementation-engineer.md`](../auditor/life/areas/rubrics/implementation-engineer.md).
+Scan CEO corrective comments citing [`../auditor/rubrics/implementation-engineer.md`](../auditor/rubrics/implementation-engineer.md).
 
 ## 5. Assignments
 
