@@ -22,7 +22,7 @@ Read `PAPERCLIP_WAKE_REASON`. If mention/approval → handle that path first; if
 
 ## 2. Read the rules
 
-- Open [`life/areas/engagement-patterns.md`](life/areas/engagement-patterns.md) (your allow-list, block-list, language rules, learned what-works).
+- Open [`knowledge/engagement-patterns.md`](knowledge/engagement-patterns.md) (your allow-list, block-list, language rules, learned what-works).
 - Open [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing/life/areas/content-playbook.md) for this week's directives and content pillars.
 
 ## 3. Approvals
@@ -48,7 +48,7 @@ Work through `in_progress` first. Typical task types:
 
 Pull the last 72h of Jules's own LinkedIn posts and their engagements via Composio. For each engagement (like, comment, share) that's new since last heartbeat:
 
-1. **Log** to `life/areas/engagement-log.md`:
+1. **Log** to `knowledge/engagement-log.md`:
    ```
    | YYYY-MM-DD HH:MM | <post URL> | <engager profile URL> | <type: like|comment|share> | <comment text if comment> | Tier: <1|2|3|unknown> |
    ```

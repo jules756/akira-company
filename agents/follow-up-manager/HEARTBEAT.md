@@ -28,7 +28,7 @@ Open [`../crm-steward/life/areas/crm-schema.md`](../crm-steward/life/areas/crm-s
 
 ## 3. Read the cadence patterns
 
-Open [`life/areas/follow-up-patterns.md`](life/areas/follow-up-patterns.md). Read default and learned rules. These drive step 6.
+Open [`knowledge/follow-up-patterns.md`](knowledge/follow-up-patterns.md). Read default and learned rules. These drive step 6.
 
 If the file doesn't exist yet, create it with the seed defaults from `AGENTS.md`.
 
@@ -118,7 +118,7 @@ Use Composio → Google Calendar to create a 30-min event in Jules' calendar, ti
 
 ### 7b. Generate the pre-call brief immediately
 
-This is a booking-time action — don't defer it to Head of Sales' call-day heartbeat. See [`life/areas/pre-call-brief-template.md`](life/areas/pre-call-brief-template.md) for the full prompt and output structure.
+This is a booking-time action — don't defer it to Head of Sales' call-day heartbeat. See [`knowledge/pre-call-brief-template.md`](knowledge/pre-call-brief-template.md) for the full prompt and output structure.
 
 1. **Gather inputs via Composio:**
    - All LinkedIn DMs between Jules and the prospect.
