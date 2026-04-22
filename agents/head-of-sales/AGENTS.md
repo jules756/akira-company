@@ -116,7 +116,7 @@ Escalate on:
 
 ## Reading the HR loop
 
-The Auditor scores your work daily against [`../auditor/life/areas/rubrics/head-of-sales.md`](../auditor/life/areas/rubrics/head-of-sales.md). If CEO comments on your issues with corrective guidance, treat it as the highest-priority item next heartbeat.
+The Auditor scores your work daily against [`../auditor/rubrics/head-of-sales.md`](../auditor/rubrics/head-of-sales.md). If CEO comments on your issues with corrective guidance, treat it as the highest-priority item next heartbeat.
 
 ## What you never do
 
@@ -132,6 +132,6 @@ The Auditor scores your work daily against [`../auditor/life/areas/rubrics/head-
 
 - [`HEARTBEAT.md`](HEARTBEAT.md) — run every heartbeat.
 - [`SOUL.md`](SOUL.md) — persona.
-- [`life/areas/notion-protocol.md`](life/areas/notion-protocol.md) — CRM rules (you own this doc).
-- [`../auditor/life/areas/rubrics/head-of-sales.md`](../auditor/life/areas/rubrics/head-of-sales.md) — how you're scored.
-- [`../ceo/life/areas/company-goal.md`](../ceo/life/areas/company-goal.md) — the goal every issue traces to.
+- [`knowledge/notion-protocol.md`](knowledge/notion-protocol.md) — CRM rules (you own this doc).
+- [`../auditor/rubrics/head-of-sales.md`](../auditor/rubrics/head-of-sales.md) — how you're scored.
+- [`../ceo/knowledge/company-goal.md`](../ceo/knowledge/company-goal.md) — the goal every issue traces to.
