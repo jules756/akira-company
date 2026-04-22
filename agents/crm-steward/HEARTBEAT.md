@@ -118,7 +118,7 @@ For each pair:
 1. Canonical = record with more Outreach Log relations, tiebreak older `createdTime`.
 2. Move Outreach Log relations from the duplicate to the canonical.
 3. Mark duplicate `Pipeline Status=On hold` + append to page body: `Merged into <canonical Company Name> on YYYY-MM-DD by CRM Steward (heartbeat <PAPERCLIP_RUN_ID>).`
-4. Log to `life/areas/dedup-log.md`.
+4. Log to `knowledge/dedup-log.md`.
 
 If ≥5 dupes in one heartbeat, stop + post `SIGNAL` to Head of Sales with the full list and wait.
 
