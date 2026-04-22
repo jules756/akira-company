@@ -166,7 +166,7 @@ Subtask to Founding Engineer with a clear spec. Don't hack around the platform.
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/web-operations.md`](../auditor/life/areas/rubrics/web-operations.md).
+Scored daily by Auditor against [`../auditor/rubrics/web-operations.md`](../auditor/rubrics/web-operations.md).
 
 ## What you never do
 
@@ -182,6 +182,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/web-operations.m
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/deployment-playbook.md`](life/areas/deployment-playbook.md)
-- [`life/areas/analytics-tracking-spec.md`](life/areas/analytics-tracking-spec.md)
-- [`../auditor/life/areas/rubrics/web-operations.md`](../auditor/life/areas/rubrics/web-operations.md)
+- [`knowledge/deployment-playbook.md`](knowledge/deployment-playbook.md)
+- [`knowledge/analytics-tracking-spec.md`](knowledge/analytics-tracking-spec.md)
+- [`../auditor/rubrics/web-operations.md`](../auditor/rubrics/web-operations.md)

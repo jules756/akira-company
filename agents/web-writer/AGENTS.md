@@ -105,7 +105,7 @@ Per [`../head-of-marketing/life/areas/content-playbook.md`](../head-of-marketing
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/web-writer.md`](../auditor/life/areas/rubrics/web-writer.md).
+Scored daily by Auditor against [`../auditor/rubrics/web-writer.md`](../auditor/rubrics/web-writer.md).
 
 ## What you never do
 
@@ -121,6 +121,6 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/web-writer.md`](
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/editorial-calendar.md`](life/areas/editorial-calendar.md) — what's shipped + what's queued.
-- [`../seo-aeo-specialist/life/areas/seo-playbook.md`](../seo-aeo-specialist/life/areas/seo-playbook.md) — article shape + brand rules.
+- [`knowledge/editorial-calendar.md`](knowledge/editorial-calendar.md) — what's shipped + what's queued.
+- [`../seo-aeo-specialist/knowledge/seo-playbook.md`](../seo-aeo-specialist/knowledge/seo-playbook.md) — article shape + brand rules.
 - [`../auditor/life/areas/rubrics/web-writer.md`](../auditor/life/areas/rubrics/web-writer.md)

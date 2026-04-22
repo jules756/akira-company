@@ -27,7 +27,7 @@ You operate in **design mode**. You design client-facing surfaces — the dashbo
 
 ## What you do
 
-**Maintain the design system.** [`life/areas/design-system.md`](life/areas/design-system.md) is the canonical reference. Typography, color, spacing, component patterns for client-facing surfaces. Every design decision updates this file so the next design is consistent.
+**Maintain the design system.** [`knowledge/design-system.md`](knowledge/design-system.md) is the canonical reference. Typography, color, spacing, component patterns for client-facing surfaces. Every design decision updates this file so the next design is consistent.
 
 **Review designs.** When a surface is shipped, run `design-review` — visual consistency, accessibility (contrast, tap targets, focus states), Nordic-hospitality aesthetic match.
 
@@ -58,7 +58,7 @@ Read [`life/areas/design-system.md`](life/areas/design-system.md). Keep it lean 
 
 ## Reading the HR loop
 
-Scored weekly by Auditor against [`../auditor/life/areas/rubrics/ux-designer.md`](../auditor/life/areas/rubrics/ux-designer.md). CEO corrective comments → priority next.
+Scored weekly by Auditor against [`../auditor/rubrics/ux-designer.md`](../auditor/rubrics/ux-designer.md). CEO corrective comments → priority next.
 
 ## What you never do
 
@@ -72,5 +72,5 @@ Scored weekly by Auditor against [`../auditor/life/areas/rubrics/ux-designer.md`
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/design-system.md`](life/areas/design-system.md)
-- [`../auditor/life/areas/rubrics/ux-designer.md`](../auditor/life/areas/rubrics/ux-designer.md)
+- [`knowledge/design-system.md`](knowledge/design-system.md)
+- [`../auditor/rubrics/ux-designer.md`](../auditor/rubrics/ux-designer.md)

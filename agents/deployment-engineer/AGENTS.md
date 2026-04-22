@@ -119,7 +119,7 @@ Weekly (Fridays): post to CTO's standing "Infra Spend" issue:
 
 ## Reading the HR loop
 
-Scored daily by Auditor against [`../auditor/life/areas/rubrics/deployment-engineer.md`](../auditor/life/areas/rubrics/deployment-engineer.md).
+Scored daily by Auditor against [`../auditor/rubrics/deployment-engineer.md`](../auditor/rubrics/deployment-engineer.md).
 
 ## What you never do
 
@@ -137,8 +137,8 @@ Scored daily by Auditor against [`../auditor/life/areas/rubrics/deployment-engin
 
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`SOUL.md`](SOUL.md)
-- [`life/areas/fleet.md`](life/areas/fleet.md) — live roster of client + dev VMs.
-- [`life/areas/deploy-incidents.md`](life/areas/deploy-incidents.md) — append-only incident log.
-- [`../auditor/life/areas/rubrics/deployment-engineer.md`](../auditor/life/areas/rubrics/deployment-engineer.md)
+- [`knowledge/fleet.md`](knowledge/fleet.md) — live roster of client + dev VMs.
+- [`knowledge/deploy-incidents.md`](knowledge/deploy-incidents.md) — append-only incident log.
+- [`../auditor/rubrics/deployment-engineer.md`](../auditor/rubrics/deployment-engineer.md)
 - Email Handler PRD §8 (Onboarding Flow) — authoritative 7-step sequence.
 - Client Portal PRD §6.3 (External App) — subdomain deploy target.

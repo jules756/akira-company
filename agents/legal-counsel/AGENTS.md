@@ -82,7 +82,7 @@ From a Proposal marked `Signed` in Notion:
 
 ## Reading the HR loop
 
-Scored by Auditor against [`../auditor/life/areas/rubrics/legal-counsel.md`](../auditor/life/areas/rubrics/legal-counsel.md). CEO corrective comments → priority next heartbeat.
+Scored by Auditor against [`../auditor/rubrics/legal-counsel.md`](../auditor/rubrics/legal-counsel.md). CEO corrective comments → priority next heartbeat.
 
 ## What you never do
 
@@ -99,5 +99,5 @@ Scored by Auditor against [`../auditor/life/areas/rubrics/legal-counsel.md`](../
 - [`SOUL.md`](SOUL.md)
 - [`HEARTBEAT.md`](HEARTBEAT.md)
 - [`life/resources/templates/`](life/resources/templates/) — the template library.
-- [`life/areas/jurisdiction-notes.md`](life/areas/jurisdiction-notes.md) — SE vs NO quirks worth remembering.
-- [`../auditor/life/areas/rubrics/legal-counsel.md`](../auditor/life/areas/rubrics/legal-counsel.md)
+- [`knowledge/jurisdiction-notes.md`](knowledge/jurisdiction-notes.md) — SE vs NO quirks worth remembering.
+- [`../auditor/rubrics/legal-counsel.md`](../auditor/rubrics/legal-counsel.md)
