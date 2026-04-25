@@ -7,21 +7,25 @@ color: "#64748b"
 
 # Company Ops
 
-The CEO + Auditor layer. Governance, weekly audit-log review, engineering retros that affect company-wide direction, board briefs, and cross-functional coordination issues that don't cleanly belong in any single team's project.
+The governance layer for the company. Company Ops is where routing, approvals, escalation, and cross-functional handoffs are kept explicit so the CEO stays strategic and the Chief of Staff handles daily coordination.
 
 ## Scope
 
 - **CEO daily rhythm** — identity check, approval queue, delegation, fact extraction.
+- **Chief of Staff routing** — receive ambiguous or cross-functional work, classify it into one of the four operating flows, split it into the right next-step brief, and prevent duplicate or orphaned work.
 - **Auditor daily scoring** — rubric runs across all active agents; SIGNALs to CEO when drift is material.
 - **HR loop** — CEO reads Auditor findings, acts on flagged agents (corrective comment / update AGENTS.md / pause).
 - **Weekly governance review** — CEO's Friday audit-log scan posted to the standing `Governance Review` issue.
 - **Monday board brief** — CEO summarizes the week for Jules (prev-week outcomes + this-week bet).
 - **Approval handling** — CEO routes hiring / strategy / structural-change approvals to Jules.
 - **Governance-phase advancement** — CEO proposes Phase 1 → 2 → 3 transitions based on evidence from all rubrics.
+- **Cross-functional escalation** — anything that spans Sales, Marketing, Engineering & Product, or Customer Success gets routed through the Chief of Staff first unless the CEO decision itself is the issue.
+- **Signal routing rule** — Sales passes lead objections, stage changes, and repeatable demand signals to the Chief of Staff; Marketing passes content performance, engagement spikes, and magnet signals to the Chief of Staff. The Chief of Staff decides the next owner and writes the handoff brief.
 
 ## Primary agents
 
 - CEO (owner)
+- Chief of Staff
 - Auditor
 
 ## References
@@ -37,4 +41,5 @@ The CEO + Auditor layer. Governance, weekly audit-log review, engineering retros
 - Governance Review issue updated every Friday with audit-log findings.
 - Every Auditor SIGNAL gets a CEO-recorded response within 48h.
 - Budget alerts (80% threshold) never sit unresponded > 24h.
+- Cross-functional requests get routed without bouncing between teams.
 - Phase advancement happens on evidence, not wishful thinking.

@@ -13,22 +13,23 @@
 | | Count |
 |---|---|
 | Agents | 26 |
-| Teams | 4 (Sales, Marketing, Web, Engineering & Product) |
+| Teams | 3 operating teams + 1 Web publishing subteam + Chief of Staff |
 | Projects | 12 |
 | Skills | 74 |
 | Scheduled routines | 19 |
 
 ## How the team is organised
 
-Everything is a tree rooted at CEO. The Auditor observes; Legal Counsel files contracts; four functional teams deliver.
+Everything is a tree rooted at CEO. The Chief of Staff routes work; the Auditor observes; Legal Counsel files contracts; the operating teams deliver, with Web nested under Marketing as the publishing subteam.
 
 ```
 CEO
-├── Auditor                   # scores agents against role rubrics
-├── Legal Counsel             # MSA + DPA + eSignature via Google Drive
-├── Research Coordinator      # Deerflow concierge for every team's research asks
+├── Chief of Staff           # routing, handoffs, duplicate checks, queue triage
+├── Auditor                  # scores agents against role rubrics
+├── Legal Counsel            # MSA + DPA + eSignature via Google Drive
+├── Research Coordinator     # Deerflow concierge for every team's research asks
 ├── Customer Success Manager  # retention, upsell, referral
-├── CTO                       # locks plans, gates reviews
+├── CTO                      # locks plans, gates reviews
 │   ├── Founding Engineer        # writes the Amis skills
 │   ├── QA Engineer              # :candidate → :stable promotion gate + fleet regression
 │   ├── Deployment Engineer      # spins up per-client VMs on Hetzner
@@ -53,6 +54,18 @@ CEO
 
 **QA vs Auditor** — QA tests code (test matrix, fleet regression, bug reproduction). Auditor scores agent behaviour against rubrics. Different scope; no overlap.
 
+## Operating model
+
+Paperclip runs through four explicit flows:
+- lead and reputation
+- new client deployment
+- skill library growth
+- maintenance
+
+The Chief of Staff routes work into the right flow before execution.
+
+See [`docs/paperclip-routines.md`](docs/paperclip-routines.md) for the manual Paperclip routine creation list. Agent docs describe behavior; this file is the external routine catalog to create from.
+
 ## How a client goes live
 
 1. **Head of Sales** closes → Proposal status `Signed` in Notion.
@@ -71,8 +84,8 @@ Drives pipeline from cold Nordic hospitality prospects to signed Proposals. Head
 ### Marketing
 Builds demand + converts engagement. Head of Marketing, LinkedIn Engagement, Content Writer, Lead Magnet Creator. Cross-posts with Web for the SEO/AEO loop.
 
-### Web
-Owns `akira-agent.com` end-to-end. SEO + AEO Specialist, SEO Trend Researcher, Web Writer (14 articles/week), Web Designer, Web Operations. Next.js + Vercel single stack.
+### Web (Marketing subteam)
+Owns `akira-agent.com` end-to-end as Marketing's publishing subteam. SEO + AEO Specialist, SEO Trend Researcher, Web Writer (14 articles/week), Web Designer, Web Operations. Next.js + Vercel single stack.
 
 ### Engineering & Product
 Builds + ships + supports the Amis agent bundle. CTO, Founding Engineer, QA Engineer, Deployment Engineer, Implementation Engineer, UX Designer, Product Manager.

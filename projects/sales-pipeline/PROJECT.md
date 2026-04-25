@@ -11,13 +11,14 @@ Sales team's conversion engine. Everything between "a prospect enters Notion CRM
 
 ## Scope
 
-- **Daily CRM sweep** — Head of Sales classifies active leads Hot / Warm / At-Risk, escalates to CEO.
+- **Daily CRM sweep** — Head of Sales classifies active leads Hot / Warm / At-Risk, escalates to CEO, and routes repeatable patterns to the Chief of Staff.
 - **Outreach Log hygiene** — every touch logged via CRM Steward.
 - **Follow-up cadence** — Follow-Up Manager watches Gmail, reactivates silent leads per learned cadence.
 - **Pre-call briefs** — auto-generated at Cal.com booking time via Follow-Up Manager (Cold-to-Cash pre-call workflow).
 - **Pipeline stage progression** — Head of Sales requests via Steward with evidence.
 - **Weekly analytics** — Growth Analyst's Friday Board Brief.
 - **Prospect sourcing** — Lead Researcher feeds the Google Sheet (engagement-first, Apollo secondary).
+- **Founder-led discovery support** — Sales captures objections, pain points, and desired outcomes from founder calls, then turns them into follow-up, qualification, and lead progression.
 
 ## Primary agents
 

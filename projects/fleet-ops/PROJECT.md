@@ -53,3 +53,4 @@ Coordinates with Founding Engineer (tag handoffs), CSM (churn trigger), Implemen
 - 100% of live VMs pulling `:stable` within 24h of a rollout.
 - Every churned client torn down within 7 days of the `churned` CRM flag, with DPA export logged.
 - Weekly cost report posts every Friday without manual nudging.
+- Client runtime issues stay isolated from capability-library changes unless a shared fix is required.

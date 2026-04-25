@@ -52,16 +52,20 @@ Paperclip absorbs monitoring, onboarding flows, client reporting, follow-ups. Ak
 
 ## Organisation
 
-**17 agents across 3 teams + 2 CEO-reporting ICs:**
+**18 agents across 3 teams + 1 Web publishing subteam + Chief of Staff + 2 CEO-reporting ICs:**
 
+- **Chief of Staff** — routing, handoffs, duplicate checks, queue triage, ownership assignment
 - **Sales team** — Head of Sales · CRM Steward · Follow-Up Manager · Growth Analyst · Lead Researcher
 - **Marketing team** — Head of Marketing · LinkedIn Engagement · Content Writer · Lead Magnet Creator
+  - **Web publishing subteam** — SEO + AEO Specialist · SEO Trend Researcher · Web Writer · Web Designer · Web Operations
 - **Engineering & Product team** — CTO · Founding Engineer · Implementation Engineer · UX Designer · Product Manager
 - **CEO-reporting** — CEO · Auditor · Customer Success Manager
 
-Six projects organise the work: onboarding · demand-creation · sales-pipeline · skill-library-delivery · customer-success · company-ops.
+Four operating flows organize the work: lead and reputation · new client deployment · skill library growth · maintenance.
 
 Every agent runs on `opencode_local` with `azure-grok/grok-4-1-fast-non-reasoning` and reads its own `AGENTS.md` + `SOUL.md` + `HEARTBEAT.md` on every wake. Budgets, approval gates, and audit rituals are codified in the CEO's `governance.md`.
+
+See [`docs/paperclip-routines.md`](docs/paperclip-routines.md) for the external routine creation list. Agent docs describe behavior; this file is the manual Paperclip routine catalog.
 
 ---
 

@@ -51,7 +51,7 @@
 | Writing to the CRM via Steward (after the Steward validates the request) | CRM Steward |
 | Writing to Agents (The Bots) (PM only) | PM |
 | Creating Paperclip subtasks / comments | Any agent |
-| Updating agent's own `life/areas/` + `memory/` files | The agent that owns it |
+| Updating agent's own `knowledge/` + `memory/` files | The agent that owns it |
 | Logging an Outreach Log entry on a reply received | Follow-Up Manager (via Steward request) |
 | Daily schema snapshot by CRM Steward | CRM Steward |
 | Running `autoplan` / `review` / `retro` skills | Relevant agent |

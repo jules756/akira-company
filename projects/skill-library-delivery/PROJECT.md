@@ -7,13 +7,14 @@ color: "#8b5cf6"
 
 # Skill Library & Delivery
 
-Engineering's compounding track: build once, ship to all clients. The library is the moat. This project covers what Founding Engineer builds + how it's gated by QA + how it's delivered per-client. Infrastructure (VM fleet) lives in [`fleet-ops`](../fleet-ops/PROJECT.md). Code-side testing lives in [`quality-assurance`](../quality-assurance/PROJECT.md).
+Engineering's compounding track: build once, ship to all clients. The library is the moat. This project covers how reusable capabilities are built, how deployment surfaces and configuration pages are maintained, how the QA gate works, and how per-client delivery runs. Infrastructure (VM fleet) lives in [`fleet-ops`](../fleet-ops/PROJECT.md). Code-side testing lives in [`quality-assurance`](../quality-assurance/PROJECT.md).
 
 ## Scope
 
-### Library expansion (Skilled Builder)
-- **Library builds** — new capabilities are built by the Skilled Builder following the Skill Development Guide. Build once, deploy N.
+### Library expansion (Founding Engineer + Skilled Builder)
+- **Library builds** — new capabilities are built by the Founding Engineer / Skilled Builder path following the Skill Development Guide. Build once, deploy N.
 - **Extensions + maintenance** — existing capabilities evolve as new patterns surface from Implementation Engineer's pattern reports.
+- **Deployment surfaces** — dashboards, configuration pages, and admin flows are part of the product, not side work.
 - **CI tags** — every merge produces `ghcr.io/jules756/amis:candidate-<sha>`. Never self-promoted to `:stable` — QA owns that gate.
 - **Library promotion** — when a capability moves to `production` state, Skilled Builder notifies Customer Success Manager → triggers a library-sweep for upsells.
 
@@ -32,7 +33,6 @@ Engineering's compounding track: build once, ship to all clients. The library is
 ## Primary agents
 
 - **CTO** (team lead).
-- **Skilled Builder** — library builder.
 - **Founding Engineer** — platform engineering and complex technical work.
 - **Skilled Builder** — capability library expansion.
 - **QA Engineer** — promotion gate + fleet regression (owns [`quality-assurance`](../quality-assurance/PROJECT.md)).
@@ -55,3 +55,4 @@ Engineering's compounding track: build once, ship to all clients. The library is
 - No client Bot stuck in Building > 21 days without a stated blocker.
 - No library capability `production` > 30 days without a deployment to ≥2 clients.
 - Every `:candidate` promoted to `:stable` has a QA green verdict on file.
+- Clients can configure and observe their agents through the shipped surfaces without needing ad hoc manual setup.

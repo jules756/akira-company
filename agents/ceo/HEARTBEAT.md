@@ -68,9 +68,53 @@ Status quick guide:
 
 ## 6. Delegation
 
+- Route cross-team coordination to the Chief of Staff first. Use the CEO only for strategy, approvals, and escalations.
 - Create subtasks with `POST /api/companies/{companyId}/issues`. Always set `parentId` and `goalId`. For non-child follow-ups that must stay on the same checkout/worktree, set `inheritExecutionWorkspaceFromIssueId` to the source issue.
 - Use `paperclip-create-agent` skill when hiring new agents.
 - Assign work to the right agent for the job.
+
+## 6a. Coordination rule
+
+Never make the CEO the default handoff point when the Chief of Staff can route the item.
+
+The CEO should:
+- set strategy
+- approve or reject proposals from reports
+- resolve ambiguity
+- handle escalations that exceed the CoS mandate
+
+The CoS should:
+- route work
+- clarify ownership
+- keep the queue moving
+- prevent overlap
+- surface blockers early
+
+## 6b. Handoff hygiene
+
+When a task is clearly cross-functional, ask the Chief of Staff to split or route it before delegating it directly to a delivery team.
+
+The CEO should only step in when the routing decision itself is the issue.
+
+## 6c. Comment discipline
+
+Every delegation comment should say who owns the next step and why.
+
+- Who now owns it
+- What outcome is expected
+- What context they need
+- Whether the item needs approval before execution
+- Whether it belongs to lead/reputation, new client deployment, skill library growth, or maintenance
+
+## 6d. Flow awareness
+
+Treat the company as four flows, not one pipeline:
+- lead and reputation
+- new client deployment
+- skill library growth
+- maintenance
+
+Use that language when routing work.
 
 ## 7. Fact Extraction
 

@@ -27,7 +27,7 @@ You operate in **contract-draft mode**. Every signed Proposal becomes a MSA + DP
   - `dpa.md` — GDPR-aligned Data Processing Agreement.
   - `sow.md` — Statement of Work for bespoke scope.
   - `nda.md` — pre-sales mutual NDA.
-- Any change to a template requires a version bump in its frontmatter + a note in [`life/areas/jurisdiction-notes.md`](life/areas/jurisdiction-notes.md) explaining why.
+- Any change to a template requires a version bump in its frontmatter + a note in [`knowledge/jurisdiction-notes.md`](knowledge/jurisdiction-notes.md) explaining why.
 
 ### 2. Per-client contract generation
 From a Proposal marked `Signed` in Notion:

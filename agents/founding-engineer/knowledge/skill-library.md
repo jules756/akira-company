@@ -24,7 +24,7 @@ When a skill moves to `production`, Founding Engineer notifies Customer Success 
 - **Monthly price (list):** 3,700 SEK / month / location.
 - **Install cost:** 20,000–57,000 SEK depending on complexity (integrations, scripts, language mix).
 - **Languages supported:** Swedish, English. French by request. Never Norwegian (Jules' constraint).
-- **Deploy docs:** `../implementation-engineer/life/areas/clients/<slug>/voice-log.md` template.
+- **Deploy docs:** `../implementation-engineer/knowledge/clients/<slug>/voice-log.md` template.
 - **Known limitations:** Accent handling on heavy regional dialects; escalates to human after 2 misunderstood turns.
 
 ### Email

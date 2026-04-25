@@ -36,3 +36,4 @@ Retention + library-driven upsell + referral. The second human function at Akira
 - **Churn ≤ 10% annual.**
 - Every library-ship triggers a sweep within 24h.
 - Zero missed 90-day referral asks.
+- Retention work stays distinct from new-client deployment and capability-library growth.

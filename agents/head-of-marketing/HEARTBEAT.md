@@ -74,6 +74,7 @@ This is the flywheel. Do it in order.
    - Append to "Learnings" — specific, dated, with evidence.
    - Update "Standing directives" — what the team focuses on this week.
    - Adjust "Content pillars" if a pillar is clearly dead or a new one is clearly alive.
+   - Keep the channel mix explicit: blog, LinkedIn, newsletter, and other social posts all count as one funnel.
 5. Publish the week's **content calendar** as a Paperclip issue titled `Content Calendar — Week of YYYY-MM-DD`, assigned to yourself, with subtasks auto-created for each planned item:
    - **3× LinkedIn posts** (Content Writer drafts with signal hypothesis; LinkedIn Engagement publishes after your approval). At least one should come from the conversations-→-content pipeline.
    - 1× Newsletter issue (Content Writer).

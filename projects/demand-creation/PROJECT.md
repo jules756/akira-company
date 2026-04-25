@@ -13,11 +13,12 @@ Marketing team's ongoing work. The "pull" side of the funnel — content creates
 
 Every marketing issue lives here:
 
-- **Content calendar** — 3 posts/week (Mon lead-magnet / Wed personal / Fri technical), each with a signal hypothesis.
+- **Content calendar** — SEO, LinkedIn, newsletter, and broader social content, with each item carrying a signal hypothesis.
 - **Engagement capture** — LinkedIn Engagement scans Jules's own posts every heartbeat for 72h post-publish; Tier 1 engagers flagged for 24h reactivation.
 - **Newsletter** — weekly Beehiiv issues.
 - **Lead magnets** — Tally-first micro-products (ROI calculators, quizzes, playbooks). Ship, measure, kill underperformers.
 - **Monday ritual** — Head of Marketing's weekly review + content-playbook update + conversations-→-content pass.
+- **Lead quality guardrail** — the content system is judged by qualified booked calls, not traffic volume alone.
 
 ## Primary agents
 
@@ -40,5 +41,6 @@ Every marketing issue lives here:
 - Reactivation → booked call ≥ 15%.
 - Newsletter subscribers growing week-over-week.
 - ≥1 magnet converting above 10% (otherwise kill + ship a new one).
+- Blog / LinkedIn / newsletter topics stay aligned to the paid client profile.
 
 When North Star milestones hit, the team advances governance phase, not project close.

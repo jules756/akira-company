@@ -15,6 +15,8 @@ tags:
 primary_project: sales-pipeline
 ---
 
-The Sales team owns the conversion side of the funnel. Head of Sales runs daily CRM sweeps, prioritizes hot leads, and escalates to CEO. CRM Steward is the gatekeeper for all Notion writes. Follow-Up Manager watches Gmail and re-engages silent leads. Growth Analyst publishes the Friday Board Brief covering both funnels. Lead Researcher sources Nordic hospitality prospects (engagement-first, Apollo secondary) into the Google Sheet.
+The Sales team owns the conversion side of the funnel. Head of Sales runs daily CRM sweeps, prioritizes hot leads, and escalates to CEO or the Chief of Staff when routing is the issue. CRM Steward is the gatekeeper for all Notion writes. Follow-Up Manager watches Gmail and re-engages silent leads. Growth Analyst publishes the Friday Board Brief covering both funnels. Lead Researcher sources Nordic hospitality prospects (engagement-first, Apollo secondary) into the Google Sheet.
+
+Sales supports founder-led discovery by turning call context into follow-up, ICP refinement, outreach, and lead progression. It does not own the discovery call itself. When a lead signal turns into a cross-functional ask, Sales routes it to the Chief of Staff instead of guessing the owner.
 
 Reports to CEO via Head of Sales. Primary project: `sales-pipeline`.

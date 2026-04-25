@@ -1,6 +1,6 @@
 ---
 name: Web
-description: Web team — owns akira-agent.com end-to-end. SEO + AEO research, daily SEO trend scouting, twice-daily blog cadence (14 articles/week), case studies, web design, deployment, daily Search Console analysis. Next.js + Vercel single-stack.
+description: Web publishing subteam — owns akira-agent.com end-to-end under Marketing. SEO + AEO research, daily SEO trend scouting, twice-daily blog cadence (14 articles/week), case studies, web design, deployment, daily Search Console analysis. Next.js + Vercel single-stack.
 slug: web
 manager: ../../agents/head-of-marketing/AGENTS.md
 includes:
@@ -18,7 +18,7 @@ tags:
 primary_project: web-publishing
 ---
 
-The Web team owns akira-agent.com end-to-end with a Next.js + Vercel single stack.
+The Web publishing subteam owns akira-agent.com end-to-end with a Next.js + Vercel single stack.
 
 - **SEO + AEO Specialist** briefs every article and tracks both Google rankings and AI search citations.
 - **SEO Trend Researcher** scouts the SEO + AEO landscape daily and feeds tactic updates to the team — major Google or LLM platform updates get a response plan within 48h.

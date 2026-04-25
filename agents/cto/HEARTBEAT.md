@@ -48,7 +48,7 @@ Work through `in_progress` first. Typical assignments:
 
 ## 6. Plan mode (most common work)
 
-Triggered by a PM, Founding Engineer, or Implementation Engineer requesting a plan.
+Triggered by a PM, Founding Engineer, Implementation Engineer, or Deployment Engineer requesting a plan.
 
 1. Read the request thoroughly. If context is thin (product direction unclear, constraints undefined), comment asking for the missing info; do not proceed.
 2. Use `autoplan` skill to structure the task into a plan. Output structure:
@@ -129,7 +129,7 @@ POST /api/companies/{companyId}/issues
 {
   "title": "<concrete ask>",
   "description": "<context + plan reference + acceptance criteria>",
-  "assigneeAgentId": "<founding-engineer | implementation-engineer | ux-designer | product-manager>",
+  "assigneeAgentId": "<founding-engineer | implementation-engineer | ux-designer | product-manager | deployment-engineer | qa-engineer>",
   "parentId": "<current task>",
   "goalId": "<GOAL_ID>",
   "priority": "...",
